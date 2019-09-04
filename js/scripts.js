@@ -46,6 +46,26 @@ $(document).ready(function() {
     } else if (userText == null || userText == "") {
       alert('Kindly write some text if you want to post a testimonial');
     }
-
-  })
+    $("#users-posts").append('<div class="row">' +
+                                '<div class="col-md-3">' +
+                                '</div>' +
+                                '<div class="col-md-6">' +
+                                  '<div class="card">' +
+                                    '<h3 class="card-title testimonials new-titles">' + usersName + '</h3>' +
+                                    '<div class="hidden">' +
+                                      '<p class="card-body">' + userText + '</p>' +
+                                      '<p class="card-footer"><button type="button" class="btn btn-warning hide-testimonial" name="button">Hide this testimonial content</button></p>' +
+                                    '</div>' +
+                                  '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                '</div>' +
+                              '</div><br><br>');
+    $(".new-titles").click(function() {
+      $(this).siblings(".hidden").show();
+    });
+    $(".hide-testimonial").click(function() {
+      $(this).parents().find(".hidden").hide();
+    });
+  });
 });

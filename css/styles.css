@@ -87,3 +87,6 @@ h3.testimonials {
 form#testimonial-post {
   display: none;
 }
+.hidden {
+  display: none;
+}
