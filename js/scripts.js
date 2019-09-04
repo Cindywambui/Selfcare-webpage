@@ -1,9 +1,11 @@
 $(document).ready(function() {
   $("#lilly").click(function() {
     $(".lilly-hidden").show();
+    $(".lilly-image").show();
   });
   $("button#hide-lilly").click(function() {
     $(".lilly-hidden").hide();
+    $(".lilly-image").hide();
   });
   $("#patrick").click(function() {
     $(".patrick-hidden").show();
