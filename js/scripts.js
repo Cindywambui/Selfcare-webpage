@@ -31,4 +31,18 @@ $(document).ready(function() {
     $(".drew-hidden").hide();
     $(".drews-image").hide();
   });
+
+
+  $(".clickable").click(function() {
+    $("form#testimonial-post").show();
+  });
+  $("form#testimonial-post").submit(function(event) {
+    event.preventDefault();
+    var userText = $("textarea#post").val();
+
+    if (userText == null || userText == "") {
+      alert('Kindly write some text if you want to post a testimonial');
+    }
+    
+  })
 });
