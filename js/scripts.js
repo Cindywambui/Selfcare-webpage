@@ -67,5 +67,6 @@ $(document).ready(function() {
     $(".hide-testimonial").click(function() {
       $(this).parents().find(".hidden").hide();
     });
+    $("form#testimonial-post").hide();
   });
 });
