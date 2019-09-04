@@ -9,9 +9,11 @@ $(document).ready(function() {
   });
   $("#patrick").click(function() {
     $(".patrick-hidden").show();
+    $(".patrick-image").show();
   });
   $("button#hide-patrick").click(function() {
     $(".patrick-hidden").hide();
+    $(".patrick-image").hide();
   });
   $("#scarlet").click(function() {
     $(".scarlet-hidden").show();

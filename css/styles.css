@@ -12,6 +12,11 @@ img {
   display: none;
   padding-top: 140px;
 }
+.patrick-image {
+  height: 70%;
+  padding-top: 160px;
+  display: none;
+}
 .card {
   /* background-image: linear-gradient(0deg, lightpink, lightpink); */
   background-color: lightpink;
