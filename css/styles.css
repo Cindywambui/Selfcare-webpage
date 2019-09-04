@@ -4,17 +4,22 @@
   background-color: ;
 }
 img {
-  height: 60%;
   width: 100%;
 }
 
 .lilly-image {
   display: none;
   padding-top: 140px;
+  height: 60%;
 }
 .patrick-image {
   height: 70%;
   padding-top: 160px;
+  display: none;
+}
+.scarlet-image {
+  height: 70%;
+  padding-top: 150px;
   display: none;
 }
 .card {
