@@ -22,6 +22,11 @@ img {
   padding-top: 150px;
   display: none;
 }
+.drews-image {
+  height: 60%;
+  padding-top: 170px;
+  display: none;
+}
 .card {
   /* background-image: linear-gradient(0deg, lightpink, lightpink); */
   background-color: lightpink;

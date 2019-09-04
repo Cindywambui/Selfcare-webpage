@@ -25,8 +25,10 @@ $(document).ready(function() {
   });
   $("#drew").click(function() {
     $(".drew-hidden").show();
+    $(".drews-image").show();
   });
   $("button#hide-drew").click(function() {
     $(".drew-hidden").hide();
+    $(".drews-image").hide();
   });
 });
