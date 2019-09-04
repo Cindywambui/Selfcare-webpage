@@ -1,12 +1,16 @@
 #testimonials-section {
   border-style: hidden;
   border-radius: 60px;
-  background-color: ;
+  /* background-color: #010b13; */
 }
 img {
   width: 100%;
 }
-
+p.testimonials {
+  font-size: 24px;
+  font-family: 'Acme', sans-serif;
+  font-weight: normal;
+}
 .lilly-image {
   display: none;
   padding-top: 140px;
