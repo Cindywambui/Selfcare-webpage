@@ -1,9 +1,14 @@
 #testimonials-section {
   border-style: hidden;
-  border-radius: 40px;
-  background-color: maroon;
+  border-radius: 60px;
+  background-color: darkorange;
 }
-
+.card {
+  background-color: #00000066;
+  border-style: hidden;
+  border-radius: 40px;
+  color: white;
+}
 
 .testimonials {
   text-align: center;
