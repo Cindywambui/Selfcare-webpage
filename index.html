@@ -102,17 +102,31 @@
             </div><br><br>
           </div>
 
-          <div class="post-form">
+          <div class="post-form"  style="padding-bottom: 20px">
             <p class="acme-font clickable">Click on this text if you want to post your own testimonial here!</p>
             <form id="testimonial-post">
-              <label for="name" class="acme-font" style="font-size: 18px">Input your name below:</label><br>
-              <input type="text" id="users-name" placeholder="Your name here"><br>
-              <label for="post" class="acme-font" style="font-size: 18px">Write your testimonial in the input area below and click on post.</label>
-              <textarea id="post" name="name" rows="10" cols="90" placeholder="Write your testimonial here"></textarea><br>
-              <button type="submit" class="btn btn-primary" name="button">Post</button>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+
+                </div>
+                <div class="form-group col-md-4">
+                  <input type="text" class="form-control" id="users-name" placeholder="Your name here"><br>
+                </div>
+                <div class="form-group col-md-4">
+
+                </div>
+                <div class="form-group col-md-2">
+
+                </div>
+                <div class="form-group col-md-8">
+                  <textarea id="post" class="form-control" name="name" rows="10" cols="90" placeholder="Write your testimonial here"></textarea><br>
+                </div>
+                <div class="col-md-12" id="submit-button">
+                  <button type="submit" class="btn btn-primary" name="button">Post</button>
+                </div>
+              </div>
             </form>
           </div>
-
         </div>
       </div><br><br>
       <div class="contact-us">
