@@ -6,10 +6,11 @@
 img {
   width: 100%;
 }
-p.testimonials {
+.acme-font {
   font-size: 24px;
   font-family: 'Acme', sans-serif;
   font-weight: normal;
+  text-align: center;
 }
 .lilly-image {
   display: none;
@@ -72,4 +73,8 @@ h3.testimonials {
 }
 .drew-hidden {
   display: none;
+}
+.clickable:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
