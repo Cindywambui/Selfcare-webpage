@@ -38,11 +38,14 @@ $(document).ready(function() {
   });
   $("form#testimonial-post").submit(function(event) {
     event.preventDefault();
+    var usersName = $("input#users-name").val();
     var userText = $("textarea#post").val();
 
-    if (userText == null || userText == "") {
+    if (usersName == null || usersName == "") {
+      alert('Kindly input your name in the name field')
+    } else if (userText == null || userText == "") {
       alert('Kindly write some text if you want to post a testimonial');
     }
-    
+
   })
 });
