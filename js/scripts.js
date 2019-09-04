@@ -23,4 +23,9 @@
             $(".msol").toggle(1000);
     
         });
+
+        $("img#esil").click(function () {
+            $(".esol").toggle(1000);
+    
     });
+});

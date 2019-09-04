@@ -86,3 +86,6 @@ label {
 .ssol{
   display: none;
 }
+.col-lg-4:hover{
+  padding: 15px;
+}
