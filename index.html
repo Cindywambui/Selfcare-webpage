@@ -26,26 +26,30 @@
 
     <!-- Questionnaire -->
 
+<!-- <div id="Questionaire"> -->
+    <!-- Physical selfcare Questionaire -->
+
+    <div class="container">
+        <div class="row">
 
 
-<div id="Questionaire">
-    <div id="header">
-        <h1>Physical selfcare</h1>
-    </div>
-    <!-- create sections -->
+        <div class="col-lg-4">
+<div class="ps show">
+    <h1 id="ps header">Physical selfcare</h1>
+
+<img  id="psil" src="img/es picture.jpeg">
+
+
+
+    
     <br>
-    <form id="ps">
+    <div class="psol">
+    <form id="phys">
         <h2>Do you feel hydrated</h2>
         <label for="hyd"><input type="radio" name="yes" value="5" id="hyd" />Yes</label><br>
         <label for="hyd"><input type="radio" name="no" value="0" id="hyd" />No</label><br>
         <label for="hyd"><input type="radio" name="maybe" value="0" id="hyd" />Maybe</label><br>
         <label for="hyd"><input type="radio" name="idk" value="o" id="hyd" />I dont know</label><br>
-        <br>
-        <h2>How many deep breaths do you take everyday ?</h2>
-        <label for="breaths"><input type="radio" name="one" value="0" id="hyd" />One</label><br>
-        <label for="breaths"><input type="radio" name="five" value="5" id="hyd" />Five</label><br>
-        <label for="breaths"><input type="radio" name="ten" value="0" id="hyd" />Ten</label><br>
-        <label for="breaths"><input type="radio" name="twenty" value="0" id="hyd" />Twenty</label>
         <br>
         <h2>Do you sleep for 7-8 hours at night?</h2>
         <label for="sleep"><input type="radio" name="yes" value="5" id="sleep" />Yes</label><br>
@@ -58,23 +62,21 @@
         <label for="health"><input type="radio" name="Somehow" value="5" id="health" />Somehow</label><br>
         <label for="health"><input type="radio" name="Completely" value="0" id="health" />Completely</label><br>
 
-        <h2>How many deep breaths do you take everyday ?</h2>
-        <label for="breaths"><input type="radio" name="one" value="0" id="hyd" />One</label><br>
-        <label for="breaths"><input type="radio" name="five" value="5" id="hyd" />Five</label><br>
-        <label for="breaths"><input type="radio" name="ten" value="0" id="hyd" />Ten</label><br>
-        <label for="breaths"><input type="radio" name="twenty" value="0" id="hyd" />Twenty</label>
+            <h2>How many deep breaths do you take everyday ?</h2>
+            <label for="breaths"><input type="radio" name="one" value="0" id="breaths"/>One</label><br>
+            <label for="breaths"><input type="radio" name="five" value="0" id="breaths"/>Five</label><br>
+            <label for="breaths"><input type="radio" name="ten" value="0" id="breaths"/>Ten</label><br>
+            <label for="breaths"><input type="radio" name="twenty" value="5" id="breaths"/>Twenty</label>
 
     </form>
-    <!-- buttons -->
-    <div id="btn">
-        <button id="Previous">&laquo; Previous</button>
-        <button id="Next">Next &raquo;</button>
-
-        <p>Your grade is :<span id="grade">_</span></p>
-        <p id="grade2"></p>
+</div>
+     </div>  
     </div>
-
-    <div id="ss">
+<div class="col-lg-4">
+    <div class="ms show">
+        <img id="msil" src="" alt="">
+    <div id="sess">
+        <!-- social selfcare questions -->
             <h1>Social selfcare</h1>
             <form id="ss">
                 <h2>How would you describe yourself ?</h2>
@@ -110,30 +112,31 @@
                 </form>
               </div>
 
-<div id="ms">
+<div id="mens">
+    <!-- mental selfcare Questionaire -->
                 <h1>Mental selfcare</h1>
                 <!-- create sections -->
                 <br>
                 <form id = "ms">
                 <h2>Do you trust anyone in your life ?</h2>
-                <label for="hyd"><input type="radio" name="yes" value="5" id="hyd"/>Yes</label><br>
-                <label for="hyd"><input type="radio" name="no" value="0" id="hyd"/>No</label><br>
-                <label for="hyd"><input type="radio" name="maybe" value="0" id="hyd"/>Maybe</label><br>
-                <label for="hyd"><input type="radio" name="idk" value="o" id="hyd"/>I dont know</label><br>
+                <label for="trust"><input type="radio" name="yes" value="5" id="trust"/>Yes</label><br>
+                <label for="trust"><input type="radio" name="not" value="0" id="trust"/>Not really</label><br>
+                <label for="trust"><input type="radio" name="maybe" value="0" id="trust"/>Maybe</label><br>
+                <label for="trust"><input type="radio" name="idetf" value="o" id="trust"/>I dont even trust myself</label><br>
                 <br>
                 <h2>Do you get lonely sometimes ?</h2>
-                <label for="breaths"><input type="radio" name="one" value="0" id="hyd"/>One</label><br>
-                <label for="breaths"><input type="radio" name="five" value="5" id="hyd"/>Five</label><br>
-                <label for="breaths"><input type="radio" name="ten" value="0" id="hyd"/>Ten</label><br>
-                <label for="breaths"><input type="radio" name="twenty" value="0" id="hyd"/>Twenty</label>
+                <label for="lonely"><input type="radio" name="never" value="0" id="lonely"/>Never,always with someone</label><br>
+                <label for="lonely"><input type="radio" name="all the time" value="0" id="lonely"/>Yes, almost all the time</label><br>
+                <label for="lonely"><input type="radio" name="sometimes" value="5" id="lonely"/>Yes,sometimes</label><br>
+                <label for="lonely"><input type="radio" name="wnb" value="0" id="lonely"/>Whenever am not busy</label>
                 <br>
                 <h2>What mood are you usually in most ofthe time?</h2>
-                <label for="sleep"><input type="radio" name="yes" value="5" id="sleep"/>Yes</label><br>
-                <label for="sleep"><input type="radio" name="sometimes" value="0" id="sleep"/>Sometimes</label><br>
-                <label for="sleep"><input type="radio" name="try to" value="0" id="try to"/>I try to</label><br>
-                <label for="sleep"><input type="radio" name="cant" value="0" id="sleep"/>I cannot</label>
+                <label for="mood"><input type="radio" name="Sad" value="5" id="mood"/>Sad</label><br>
+                <label for="mood"><input type="radio" name="Happy" value="0" id="mood"/>Happy</label><br>
+                <label for="mood"><input type="radio" name="Angry" value="0" id="mood"/>Angry/moody</label><br>
+                <label for="mood"><input type="radio" name="Depends" value="0" id="mood"/>Depends on my current situation </label>
                 
-                <h2>What do you think about ofently ?</h2>
+                <h2>What do you think about oftenly ?</h2>
                 <label for="health"><input type="radio" name="Nope" value="0" id="health"/>Nope</label><br>
                 <label for="health"><input type="radio" name="Somehow" value="5" id="health"/>Somehow</label><br>
                 <label for="health"><input type="radio" name="Completely" value="0" id="health"/>Completely</label><br>
@@ -145,23 +148,18 @@
                 <label for="breaths"><input type="radio" name="twenty" value="0" id="hyd"/>Twenty</label>
                 </form> 
                 </div>
-                <div id="es"
+                <div id="es">
 
-
-                <!-- Questionnaire -->
-
-
-                </html>
                 
                 
                 <div id="Questionaire">
                      <div id="header">
-                <h1>Emotional selfcare</h1>
-                </div>
-                <!-- create sections -->
+                            <h1>Emotional selfcare</h1>
+                        </div>
+                        <!-- emotional selfcare questionaire -->
+
                 <br>
                 <form id = "ps">
-                     <!-- link the forms with the buttons -->
                 <h2>How to would you describe your emotional status</h2>
                 <label for="hyd"><input type="radio" name="yes" value="5" id="hyd"/>Yes</label><br>
                 <label for="hyd"><input type="radio" name="no" value="0" id="hyd"/>No</label><br>
@@ -184,18 +182,17 @@
                 <label for="health"><input type="radio" name="Nope" value="0" id="health"/>Nope</label><br>
                 <label for="health"><input type="radio" name="Somehow" value="5" id="health"/>Somehow</label><br>
                 <label for="health"><input type="radio" name="Completely" value="0" id="health"/>Completely</label><br>
-                
-                <h2>How many deep breaths do you take everyday ?</h2>
-                <label for="breaths"><input type="radio" name="one" value="0" id="hyd"/>One</label><br>
-                <label for="breaths"><input type="radio" name="five" value="5" id="hyd"/>Five</label><br>
-                <label for="breaths"><input type="radio" name="ten" value="0" id="hyd"/>Ten</label><br>
-                <label for="breaths"><input type="radio" name="twenty" value="0" id="hyd"/>Twenty</label>
+               
                 
                 </form>
                 
                 
                 </div>
 
+
+<!-- grades -->
+                <p>Your grade is :<span id="grade">_</span></p>
+                <p id="grade2"></p>
 
                 </div>
 
