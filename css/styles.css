@@ -1,3 +1,10 @@
+#testimonials-section {
+  border-style: hidden;
+  border-radius: 40px;
+  background-color: maroon;
+}
+
+
 .testimonials {
   text-align: center;
   font-family: 'Dancing Script', cursive;
