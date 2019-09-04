@@ -11,6 +11,7 @@ img {
   font-family: 'Acme', sans-serif;
   font-weight: normal;
   text-align: center;
+  color: silver;
 }
 .lilly-image {
   display: none;
@@ -44,7 +45,7 @@ img {
   position: ;
 }
 .card-title {
-  background-image: linear-gradient(0deg, purple, purple);
+  background-image: linear-gradient(0deg, pink, purple);
   border-style: hidden;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -60,7 +61,10 @@ img {
   font-weight: bold;
 }
 h3.testimonials {
-    color: white;
+    color: black;
+}
+h2.testimonials {
+  color: purple;
 }
 .lilly-hidden {
   display: none;
@@ -75,8 +79,12 @@ h3.testimonials {
   display: none;
 }
 .clickable:hover {
-  text-decoration: underline;
   cursor: pointer;
+  color: blue;
+}
+.clickable {
+  text-decoration: underline;
+  color: white;
 }
 .post-form {
   text-align: center;
