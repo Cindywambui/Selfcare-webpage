@@ -17,9 +17,11 @@ $(document).ready(function() {
   });
   $("#scarlet").click(function() {
     $(".scarlet-hidden").show();
+    $(".scarlet-image").show();
   });
   $("button#hide-scarlet").click(function() {
     $(".scarlet-hidden").hide();
+    $(".scarlet-image").hide();
   });
   $("#drew").click(function() {
     $(".drew-hidden").show();
