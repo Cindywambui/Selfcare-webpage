@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -6,16 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Selfcare</title>
     <link rel="icon" type="img/icon" href="img/logo.jpeg">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
     <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
 <body>
-
     <div class="navbar">
         <a href="navbar-brand" href="#"><img id="logo" src="img/logo.jpeg"></a>
         <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
@@ -24,188 +23,182 @@
         <a href="#sn"><i class="fa fa-fw fa-user"></i> Signup</a>
     </div>
 
-    <!-- Questionnaire -->
+   
+<div id="questionnaire">
 
-<!-- <div id="Questionaire"> -->
-    <!-- Physical selfcare Questionaire -->
+        <form>
+            <h1 id="ps header">Physical selfcare</h1>
+            <img id="psil" src="img/ps.jpeg">
+            <div class="physicals">
 
-    <div class="container">
-        <div class="row">
+                <h2>Do you feel hydrated</h2>
+                <label for="hyd"><input type="radio" name="yes" value="5" id="hyd" />Yes</label><br>
+                <label for="hyd"><input type="radio" name="no" value="0" id="hyd" />No</label><br>
+                <label for="hyd"><input type="radio" name="maybe" value="1" id="hyd" />Maybe</label><br>
+                <label for="hyd"><input type="radio" name="idk" value="2" id="hyd" />I dont know</label><br>
+                <br>
+                <h2>Do you sleep for 7-8 hours at night?</h2>
+                <label for="sleep"><input type="radio" name="yes" value="5" id="sleep" />Yes</label><br>
+                <label for="sleep"><input type="radio" name="sometimes" value="1" id="sleep" />Sometimes</label><br>
+                <label for="sleep"><input type="radio" name="try to" value="2" id="try to" />I try to</label><br>
+                <label for="sleep"><input type="radio" name="cant" value="0" id="sleep" />I cannot</label>
+
+                <h2>Do you feel healthy and fit ?</h2>
+                <label for="health"><input type="radio" name="Nope" value="0" id="health" />Nope</label><br>
+                <label for="health"><input type="radio" name="Somehow" value="2" id="health" />Somehow</label><br>
+                <label for="health"><input type="radio" name="Completely" value="5" id="health" />Completely</label><br>
+
+                <h2>How many deep breaths do you take everyday ?</h2>
+                <label for="breaths"><input type="radio" name="one" value="0" id="breaths" />One</label><br>
+                <label for="breaths"><input type="radio" name="five" value="2" id="breaths" />Five</label><br>
+                <label for="breaths"><input type="radio" name="ten" value="3" id="breaths" />Ten</label><br>
+                <label for="breaths"><input type="radio" name="twenty" value="5" id="breaths" />Twenty</label>
+                </br>
+                <button type =button class="btn btn-primary" name="button" id="physical">Next</button>
+
+            </div>
+
+            <div class="social">
+                <img id="ssil" src="img/ss.jpeg" alt="">
+
+                <h1 id="ss header"> Social selfcare</h1>
+                <h2>How would you describe yourself ?</h2>
+                <label for="yourself"><input type="radio" name="lively" value="5" id="yourself" />Lively</label><br>
+                <label for="yourself"><input type="radio" name="boring" value="0" id="yourself" />boring/Sad</label><br>
+                <label for="yourself"><input type="radio" name="shy" value="2"
+                        id="yourself" />Shy/Introverted</label><br>
+                <label for="yourself"><input type="radio" name="cant" value="3" id="yourself" />I cant explain</label>
+
+                <h2>Do you have a supportive family?</h2>
+                <label for="family"><input type="radio" name="no" value="0" id="family" />Not all </label><br>
+                <label for="family"><input type="radio" name="yes" value="5" id="family" />Yes</label><br>
+                <label for="family"><input type="radio" name="idk" value="2" id="family" />Not as much as i would
+                    like</label><br>
+                <label for="family"><input type="radio" name="dont have" value="3" id="family" />Dont have a
+                    family</label>
+
+                <h2>Do you spend time with people who make you happy ?</h2>
+                <label for="happy"><input type="radio" name="dont" value="0" id="happpy" />No,I dont(dont have the
+                    time)</label><br>
+                <label for="happy"><input type="radio" name="Itry" value="0" id="happy" />I try</label><br>
+                <label for="happy"><input type="radio" name="sometime" value="5" id="happy" />Sometimes</label><br>
+                <label for="happy"><input type="radio" name="allthetime" value="0" id="happy" />Most of the time</label>
+
+                <h2>Have you talked to someone today and how many ?</h2>
+                <label for="talk"><input type="radio" name="yes,3" value="2" id="talk" />Yes,3</label><br>
+                <label for="talk"><input type="radio" name="yes,1" value="1" id="talk" />Yes,1</label><br>
+                <label for="talk"><input type="radio" name="no" value="0" id="talk" />No</label><br>
+                <label for="talk"><input type="radio" name="yes above 5" value="0" id="talk" />Yes more than
+                    five</label>
+
+                <h2>What makes you happy ?</h2>
+                <label for="happpy"><input type="radio" name="nothing" value="0" id="happpy" />Nothing
+                    really</label><br>
+                <label for="happpy"><input type="radio" name="myfam" value="4" id="happpy" />Spending time with my
+                    family/friends</label><br>
+                <label for="happpy"><input type="radio" name="eating/going out" value="2" id="happpy" />Eating,drinking
+                </label><br>
+                <label for="happy"><input type="radio" name="socialactivities" value="5" id="happpy" />Engaging in
+                    social activities(going out to explore and meet new people and new things)</label>
+                </br>
+
+                <button type =button class="btn btn-primary" name="button" id="social">Next</button>
+
+            </div>
+
+            <div class="Mental">
+                <h1 id="ms header">Mental selfcare</h1>
+                <img id="msil" src="img/ms.jpeg">
+
+                <h2>Do you trust anyone in your life ?</h2>
+                <label for="trust"><input type="radio" name="yes" value="5" id="trust" />Yes</label><br>
+                <label for="trust"><input type="radio" name="not" value="0" id="trust" />Not really</label><br>
+                <label for="trust"><input type="radio" name="maybe" value="0" id="trust" />Maybe</label><br>
+                <label for="trust"><input type="radio" name="idetf" value="o" id="trust" />I dont even trust
+                    myself</label><br>
+                <br>
+                <h2>Do you get lonely sometimes ?</h2>
+                <label for="lonely"><input type="radio" name="never" value="4" id="lonely" />Never,always with
+                    someone</label><br>
+                <label for="lonely"><input type="radio" name="all the time" value="1" id="lonely" />Yes, almost all the
+                    time</label><br>
+                <label for="lonely"><input type="radio" name="sometimes" value="3"
+                        id="lonely" />Yes,sometimes</label><br>
+                <label for="lonely"><input type="radio" name="wnb" value="0" id="lonely" />Whenever am not busy</label>
+                <br>
+                <h2>What mood are you usually in most ofthe time?</h2>
+                <label for="mood"><input type="radio" name="Sad" value="2" id="mood" />Sad</label><br>
+                <label for="mood"><input type="radio" name="Happy" value="5" id="mood" />Happy</label><br>
+                <label for="mood"><input type="radio" name="Angry" value="0" id="mood" />Angry/moody</label><br>
+                <label for="mood"><input type="radio" name="Depends" value="3" id="mood" />Depends on my current
+                    situation </label>
+
+                <h2>What do you think about first when youn wake up?</h2>
+                <label for="think"><input type="radio" name="Myself" value="5" id="think" />Myself</label><br>
+                <label for="think"><input type="radio" name="myfam" value="5" id="think" />My family and
+                    friends</label><br>
+                <label for="think"><input type="radio" name="nothing,really" value="0" id="think" />Nothing</label><br>
+
+                <h2>What do you struggle dealing with ?</h2>
+                <label for="struggle"><input type="radio" name="anxiety" value="2" id="struggle" />Anxiety</label><br>
+                <label for="struggle"><input type="radio" name="depression" value="3"
+                        id="struggle" />Depression</label><br>
+                <label for="struggle"><input type="radio" name="nothing" value="0" id="struggle" />Nothing </label><br>
+                <label for="struggle"><input type="radio" name="peer pressure" value="3" id="struggle" />Peer
+                    pressure</label>
+                </br>
+                <button type =button class="btn btn-primary" name="button" id="mental">Next</button>
+            </div>
+
+            <div class="emotional">
+                <h1 id="es header">Emotional selfcare</h1>
+                <img id="esil" src="img/es .jpeg" alt="">
+
+                <h2>How to would you describe your emotional status</h2>
+                <label for="hyd"><input type="radio" name="yes" value="5" id="hyd" />Yes</label><br>
+                <label for="hyd"><input type="radio" name="no" value="0" id="hyd" />No</label><br>
+                <label for="hyd"><input type="radio" name="maybe" value="0" id="hyd" />Maybe</label><br>
+                <label for="hyd"><input type="radio" name="idk" value="o" id="hyd" />I dont know</label><br>
+                <br>
+                <h2>Have your lost someone close to you?</h2>
+                <label for="breaths"><input type="radio" name="one" value="0" id="hyd" />One</label><br>
+                <label for="breaths"><input type="radio" name="five" value="5" id="hyd" />Five</label><br>
+                <label for="breaths"><input type="radio" name="ten" value="0" id="hyd" />Ten</label><br>
+                <label for="breaths"><input type="radio" name="twenty" value="0" id="hyd" />Twenty</label>
+                <br>
+                <h2>Can you relate to the opposite sex?</h2>
+                <label for="sleep"><input type="radio" name="yes" value="5" id="sleep" />Yes</label><br>
+                <label for="sleep"><input type="radio" name="sometimes" value="0" id="sleep" />Sometimes</label><br>
+                <label for="sleep"><input type="radio" name="try to" value="0" id="try to" />I try to</label><br>
+                <label for="sleep"><input type="radio" name="cant" value="0" id="sleep" />I cannot</label>
+
+                <h2>Do you feel healthy and fit ?</h2>
+                <label for="health"><input type="radio" name="Nope" value="0" id="health" />Nope</label><br>
+                <label for="health"><input type="radio" name="Somehow" value="5" id="health" />Somehow</label><br>
+                <label for="health"><input type="radio" name="Completely" value="0" id="health" />Completely</label><br>
+
+                <button type =button class="btn btn-primary" name="button" id="emotional">Next</button>
+
+            </div>
+            <div class="button">
+            <button type="submit" value="Submit" onclick="checkvalue()">Submit</button>
+            </div>
+        </form>
 
 
-        <div class="col-lg-4">
-<div class="ps show">
-    <h1 id="ps header">Physical selfcare</h1>
-<img  id="psil" src="img/ps.jpeg">
-    
-    <div class="psol">
-    <form id="phys">
-        <h2>Do you feel hydrated</h2>
-        <label for="hyd"><input type="radio" name="yes" value="5" id="hyd" />Yes</label><br>
-        <label for="hyd"><input type="radio" name="no" value="0" id="hyd" />No</label><br>
-        <label for="hyd"><input type="radio" name="maybe" value="1" id="hyd" />Maybe</label><br>
-        <label for="hyd"><input type="radio" name="idk" value="2" id="hyd" />I dont know</label><br>
-        <br>
-        <h2>Do you sleep for 7-8 hours at night?</h2>
-        <label for="sleep"><input type="radio" name="yes" value="5" id="sleep" />Yes</label><br>
-        <label for="sleep"><input type="radio" name="sometimes" value="1" id="sleep" />Sometimes</label><br>
-        <label for="sleep"><input type="radio" name="try to" value="2" id="try to" />I try to</label><br>
-        <label for="sleep"><input type="radio" name="cant" value="0" id="sleep" />I cannot</label>
 
-        <h2>Do you feel healthy and fit ?</h2>
-        <label for="health"><input type="radio" name="Nope" value="0" id="health" />Nope</label><br>
-        <label for="health"><input type="radio" name="Somehow" value="2" id="health" />Somehow</label><br>
-        <label for="health"><input type="radio" name="Completely" value="5" id="health" />Completely</label><br>
+    <!-- grades -->
+    <div id="after_submit">
+        <!-- hide visibility -->
+        <div id="number_correct">
+            You have this questions right
 
-            <h2>How many deep breaths do you take everyday ?</h2>
-            <label for="breaths"><input type="radio" name="one" value="0" id="breaths"/>One</label><br>
-            <label for="breaths"><input type="radio" name="five" value="2" id="breaths"/>Five</label><br>
-            <label for="breaths"><input type="radio" name="ten" value="3" id="breaths"/>Ten</label><br>
-            <label for="breaths"><input type="radio" name="twenty" value="5" id="breaths"/>Twenty</label>
-    </br>
-            <button type="submit" value="Submit">Submit</button>
+        </div>
+    </div>
 
-    </form>
-</div>
-     </div>  
     </div>
 
 
-<div class="col-lg-4">
-    <div class="ss show">
-            <h1 id="ss header"> Social selfcare</h1>
-        <img id="ssil" src="img/ss.jpeg" alt="">
-            <div class="ssol">
-            <form id="ss">
-                <h2>How would you describe yourself ?</h2>
-                <label for="yourself"><input type="radio" name="lively" value="5" id="yourself"/>Lively</label><br>
-                <label for="yourself"><input type="radio" name="boring" value="0" id="yourself"/>boring/Sad</label><br>
-                <label for="yourself"><input type="radio" name="shy" value="2" id="yourself"/>Shy/Introverted</label><br>
-                <label for="yourself"><input type="radio" name="cant" value="3" id="yourself"/>I cant explain</label>
-            
-                <h2>Do you have a supportive family?</h2>
-                <label for="family"><input type="radio" name="no" value="0" id="family"/>Not all </label><br>
-                <label for="family"><input type="radio" name="yes" value="5" id="family"/>Yes</label><br>
-                <label for="family"><input type="radio" name="idk" value="2" id="family"/>Not as much as i would like</label><br>
-                <label for="family"><input type="radio" name="dont have" value="3" id="family"/>Dont have a family</label>
-            
-                <h2>Do you spend time with  people who make you happy ?</h2>
-                <label for="happy"><input type="radio" name="dont" value="0" id="happpy"/>No,I dont(dont have the time)</label><br>
-                <label for="happy"><input type="radio" name="Itry" value="0" id="happy"/>I try</label><br>
-                <label for="happy"><input type="radio" name="sometime" value="5" id="happy"/>Sometimes</label><br>
-                <label for="happy"><input type="radio" name="allthetime" value="0" id="happy"/>Most of the time</label>
-            
-                <h2>Have you talked to someone today and how many  ?</h2>
-                <label for="talk"><input type="radio" name="yes,3" value="2" id="talk"/>Yes,3</label><br>
-                <label for="talk"><input type="radio" name="yes,1" value="1" id="talk"/>Yes,1</label><br>
-                <label for="talk"><input type="radio" name="no" value="0" id="talk"/>No</label><br>
-                <label for="talk"><input type="radio" name="yes above 5" value="0" id="talk"/>Yes more than five</label>
-            
-                <h2>What makes you happy ?</h2>
-                <label for="happpy"><input type="radio" name="nothing" value="0" id="happpy"/>Nothing really</label><br>
-                <label for="happpy"><input type="radio" name="myfam" value="4" id="happpy"/>Spending time with my family/friends</label><br>
-                <label for="happpy"><input type="radio" name="eating/going out" value="2" id="happpy"/>Eating,drinking </label><br>
-                <label for="happy"><input type="radio" name="socialactivities" value="5" id="happpy"/>Engaging in social activities(going out to explore and meet new people and new things)</label>
-            </br>
-                <button type="submit" value="Submit">Submit</button>
+    </div>
 
-                </form>
-              </div>
-</div>
-</div>
-<div class="row">
-
-<div class="col-lg-4">
-    <div class="ms show">
-        <h1 id="ms header">Mental selfcare</h1>
-
-    <img id="msil" src="img/ms.jpeg" alt="">
-                
-               <div class="msol">
-                <form id = "ms">
-                <h2>Do you trust anyone in your life ?</h2>
-                <label for="trust"><input type="radio" name="yes" value="5" id="trust"/>Yes</label><br>
-                <label for="trust"><input type="radio" name="not" value="0" id="trust"/>Not really</label><br>
-                <label for="trust"><input type="radio" name="maybe" value="0" id="trust"/>Maybe</label><br>
-                <label for="trust"><input type="radio" name="idetf" value="o" id="trust"/>I dont even trust myself</label><br>
-                <br>
-                <h2>Do you get lonely sometimes ?</h2>
-                <label for="lonely"><input type="radio" name="never" value="4" id="lonely"/>Never,always with someone</label><br>
-                <label for="lonely"><input type="radio" name="all the time" value="1" id="lonely"/>Yes, almost all the time</label><br>
-                <label for="lonely"><input type="radio" name="sometimes" value="3" id="lonely"/>Yes,sometimes</label><br>
-                <label for="lonely"><input type="radio" name="wnb" value="0" id="lonely"/>Whenever am not busy</label>
-                <br>
-                <h2>What mood are you usually in most ofthe time?</h2>
-                <label for="mood"><input type="radio" name="Sad" value="2" id="mood"/>Sad</label><br>
-                <label for="mood"><input type="radio" name="Happy" value="5" id="mood"/>Happy</label><br>
-                <label for="mood"><input type="radio" name="Angry" value="0" id="mood"/>Angry/moody</label><br>
-                <label for="mood"><input type="radio" name="Depends" value="3" id="mood"/>Depends on my current situation </label>
-                
-                <h2>What do you think about first when youn  wake up?</h2>
-                <label for="think"><input type="radio" name="Myself" value="5" id="think"/>Myself</label><br>
-                <label for="think"><input type="radio" name="myfam" value="5" id="think"/>My family and friends</label><br>
-                <label for="think"><input type="radio" name="nothing,really" value="0" id="think"/>Nothing</label><br>
-                
-                <h2>What do you struggle dealing with ?</h2>
-                <label for="struggle"><input type="radio" name="anxiety" value="2" id="struggle"/>Anxiety</label><br>
-                <label for="struggle"><input type="radio" name="depression" value="3" id="struggle"/>Depression</label><br>
-                <label for="struggle"><input type="radio" name="nothing" value="0" id="struggle"/>Nothing </label><br>
-                <label for="struggle"><input type="radio" name="peer pressure" value="3" id="struggle"/>Peer pressure</label>
-                </br>
-                <button type="submit" value="Submit">Submit</button>
-
-                </form> 
-                </div>
-                </div>
-</div>
-</div>
-<div class="col-lg-4">
-    <div class="es show">
-        
-        <h1 id="es header">Emotional selfcare</h1>
-                        <img id ="esil"src="img/es .jpeg" alt="">
-                       
-                    
-    <div class="esol">
-                <form id = "ps">
-                <h2>How to would you describe your emotional status</h2>
-                <label for="hyd"><input type="radio" name="yes" value="5" id="hyd"/>Yes</label><br>
-                <label for="hyd"><input type="radio" name="no" value="0" id="hyd"/>No</label><br>
-                <label for="hyd"><input type="radio" name="maybe" value="0" id="hyd"/>Maybe</label><br>
-                <label for="hyd"><input type="radio" name="idk" value="o" id="hyd"/>I dont know</label><br>
-                <br>
-                <h2>Have your lost someone close to you?</h2>
-                <label for="breaths"><input type="radio" name="one" value="0" id="hyd"/>One</label><br>
-                <label for="breaths"><input type="radio" name="five" value="5" id="hyd"/>Five</label><br>
-                <label for="breaths"><input type="radio" name="ten" value="0" id="hyd"/>Ten</label><br>
-                <label for="breaths"><input type="radio" name="twenty" value="0" id="hyd"/>Twenty</label>
-                <br>
-                <h2>Can you relate to the opposite sex?</h2>
-                <label for="sleep"><input type="radio" name="yes" value="5" id="sleep"/>Yes</label><br>
-                <label for="sleep"><input type="radio" name="sometimes" value="0" id="sleep"/>Sometimes</label><br>
-                <label for="sleep"><input type="radio" name="try to" value="0" id="try to"/>I try to</label><br>
-                <label for="sleep"><input type="radio" name="cant" value="0" id="sleep"/>I cannot</label>
-                
-                <h2>Do you feel healthy and fit ?</h2>
-                <label for="health"><input type="radio" name="Nope" value="0" id="health"/>Nope</label><br>
-                <label for="health"><input type="radio" name="Somehow" value="5" id="health"/>Somehow</label><br>
-                <label for="health"><input type="radio" name="Completely" value="0" id="health"/>Completely</label><br>
-               
-                <button type="submit" value="Submit">Submit</button>
-
-                </form>
-                
-            </div>
-        </div>
-                </div>
-            </div>
-<!-- grades -->
-                <p>Your grade is :<span id="grade">_</span></p>
-                <p id="grade2"></p>
-
-                </div>
-
-
-</div>
-
-</div>
+    </div>

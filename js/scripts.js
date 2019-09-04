@@ -1,31 +1,29 @@
-
+$(document).ready(function(){
     
-// document.getElementById("ps").onsubmit(function(){
-//     yes =parseInt(document.querySelector('input[name="yes"]:checked').value);
-    
-    
-    // document.getElementById("form1").onsubmit=function() {
-    //     variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
-
-
-    $(document).ready(function () {
-
-        $("img#psil").click(function () {
-            $(".psol").toggle(1000);
-    
-        });
-        $("img#ssil").click(function () {
-            $(".ssol").toggle(1000);
-    
-        });
-    
-        $("img#msil").click(function () {
-            $(".msol").toggle(1000);
-    
-        });
-
-        $("img#esil").click(function () {
-            $(".esol").toggle(1000);
-    
-    });
+$("button#physical").click(function(){
+$("div.physicals").fadeOut();
+$("div.socials").fadeIn();
 });
+$("button#social").click(function(){
+    $("div.social").fadeOut();
+    $("div.Mental").fadeIn();
+    });
+    $("button#mental").click(function(){
+        $("div.Mental").fadeOut();
+        $("div.emotional").fadeIn();
+        });
+        $("button#emotional").click(function(){
+            $("div.emotional").fadeOut();
+            $("div.buttons").fadeIn();
+            });
+            
+});
+
+
+
+
+
+
+
+
+
