@@ -4,25 +4,28 @@
   background-color: ;
 }
 .card {
-  background-image: linear-gradient(0deg, lightpink, lightpink);
+  /* background-image: linear-gradient(0deg, lightpink, lightpink); */
   background-color: lightpink;
   background-blend-mode: multiply;
   border-style: hidden;
   border-radius: 40px;
-  color: ;
+  color: darkred;
   font-family: 'Acme', sans-serif;
   font-size: 18px;
 }
-/* .card-title {
+.card-title {
   background-image: linear-gradient(0deg, purple, purple);
-} */
+  border-style: hidden;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
 .testimonials {
   text-align: center;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
 }
-h2.testimonials {
-    color: ;
+h3.testimonials {
+    color: white;
 }
 .lilly-hidden {
   display: none;
