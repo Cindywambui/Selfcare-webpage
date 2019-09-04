@@ -1,33 +1,43 @@
-
+@import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
+body{
+  align-content: center;
+  font-family: 'Volkhov', serif;
+}
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(255,255,255,0.1);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  
+}
+#navbar {
+  padding-bottom: 55px;
 }
 
 #landing-image{
-  background-image:url(../images/background3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background3.jpg) no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   /* text-align: center; */
   text-transform: uppercase;
   color: white;
-  max-height: 950px;
+  max-height: 925px;
 }
 #landing-image #intro {
 text-align: center;
-padding-top: 520px;
+padding-top: 350px;
 font-size: 30px;
 padding-bottom: 600px;
-color: black;
+color: white;
 }
-
+#landing-image h1 {
+  font-size: 70px;
+}
 #dropdown {
   cursor: pointer;
-  
-}
+  }
+
 
 #menu1 , #menu2, #menu3 {
   width: 35px;
@@ -62,18 +72,19 @@ color: black;
 .dropdown-content {
   display: none;
   position: absolute;
-  /* background-color:  */
+  background-color: rgba(255,255,255,0.1);
   min-width: 160px;
-  z-index: 1;
-  padding-top: 50px;
+  /* z-index: 1; */
+  padding-top: 1px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
+
 .show {display:block;
 }
