@@ -1,14 +1,17 @@
 #testimonials-section {
   border-style: hidden;
   border-radius: 60px;
-  background-color: purple;
+  background-color: ;
 }
 .card {
+  background-image: linear-gradient(0deg, pink, pink);
   background-color: #00000066;
+  background-blend-mode: multiply;
   border-style: hidden;
   border-radius: 40px;
-  color: white;
+  color: ;
   font-family: 'Acme', sans-serif;
+  font-size: 18px;
 }
 
 .testimonials {
