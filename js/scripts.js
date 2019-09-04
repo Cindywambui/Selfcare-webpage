@@ -1,5 +1,8 @@
-// $(document).ready(function() {
-//   $(".card-title").click(function() {
-//     $(".hide").show();
-//   })
-// });
+$(document).ready(function() {
+  $("#lilly").click(function() {
+    $(".lilly-hidden").show();
+  });
+  $("button#hide-lilly").click(function() {
+    $(".lilly-hidden").hide();
+  })
+});
