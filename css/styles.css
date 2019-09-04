@@ -79,4 +79,10 @@ label {
   clear: both;
   padding-top: 20px;
   }
+}
+.psol{
+  display: none;
 } 
+.ssol{
+  display: none;
+}
