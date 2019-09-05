@@ -59,4 +59,16 @@ $(document).ready(function () {
     }).mouseleave(function () {
         $("#quote16content").fadeOut();
     })
+    $("#physicalcontenttitle").click(function () {
+        $("#physicalcontenttext").toggle();       
+    })
+    $("#mentalcontenttitle").click(function () {
+        $("#mentalcontenttext").toggle();       
+    })
+    $("#socialcontenttitle").click(function () {
+        $("#socialcontenttext").toggle();       
+    })
+    $("#emotionalcontenttitle").click(function () {
+        $("#emotionalcontenttext").toggle();       
+    })
 });
