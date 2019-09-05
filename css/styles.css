@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
 body{
   align-content: center;
   font-family: 'Volkhov', serif;
-}
+} */
 .navbar {
   overflow: hidden;
   background-color: rgba(255,255,255,0.1);
@@ -19,20 +19,24 @@ body{
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background3.jpg) no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  /* text-align: center; */
-  text-transform: uppercase;
+  text-align: center;
+  /* text-transform: uppercase; */
   color: white;
-  max-height: 925px;
+  max-height: 9700px;
 }
 #landing-image #intro {
 text-align: center;
-padding-top: 350px;
-font-size: 30px;
-padding-bottom: 600px;
+padding-top: 300px;
+/* font-size: 30px; */
+padding-bottom: 900px;
 color: white;
 }
 #landing-image h1 {
-  font-size: 70px;
+  font-size: 90px;
+}
+#landing-image p {
+  font-size: 20px;
+  text-align: center;
 }
 #dropdown {
   cursor: pointer;
@@ -87,4 +91,60 @@ color: white;
 }
 
 .show {display:block;
+}
+
+/* QUESTIONNAIRE */
+
+#sn{
+  display: none;
+}
+#btn{
+text-decoration: none;
+display: inline-block;
+padding: 8px 16px;
+margin-left: 40%;
+}
+
+#btn:hover {
+background-color:blue;
+color:  white;
+}
+
+#Previous {
+background-color:blue;
+color: black;
+}
+
+#Next {
+background-color: #4CAF50;
+color: white;
+}
+#header{
+margin-top: 0;
+background-color: white;
+margin-left: 30%;
+
+}
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+.psol{
+display: none;
+} 
+.ssol{
+display: none;
+}
+.col-lg-4:hover{
+padding: 15px;
 }
