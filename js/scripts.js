@@ -1,5 +1,5 @@
 
-
+new WOW().init();
 class FitnessCheck {
 
     constructor() {
@@ -34,6 +34,8 @@ class FitnessCheck {
         this.physicalStatusPoints = totalPhysicalStatusPoints
 
         return totalPhysicalStatusPoints
+
+  
     }
 
     /**
@@ -58,9 +60,10 @@ class FitnessCheck {
         this.socialStatusPoints = totalSocialStatusPoints
 
         return totalSocialStatusPoints
+
     }
 
-
+// go out with friends ,make time for relatives
     /**
     * Gets the trust, lonely, mood, thought and struggle points
     * from the radio inputs the user gave and sums their values
@@ -83,6 +86,7 @@ class FitnessCheck {
         this.mentalStatusPoints = totalMentalStatusPoints
 
         return totalMentalStatusPoints
+// meditate ,be in hcurch, speak to people
     }
 
 
@@ -108,7 +112,7 @@ class FitnessCheck {
 
         return totalEmotionalStatusPoints
     }
-
+// go out meet firneds ,create more relationships
 
     /**
     * Sums the physicalStatusPoints, socialStatusPoints, emotionalStatusPoints
@@ -140,11 +144,7 @@ class FitnessCheck {
     }
 
 
-    /**
-    * populates fitness report modal with the
-    * respective percentages of each category
-    *
-    */
+    
     populateFitnessReport() {
 
         var overallFitnessPerc = this.calculatelFitnessPerc(this.totalFitnessPoints, 80)
@@ -159,13 +159,14 @@ class FitnessCheck {
         $('#phyc_fit').html(physicalFitnessPerc + '%')
         $('#emot_fit').html(emotionalFitnessPerc + '%')
 
-    }
 
 
+}
 }
 
 
 var fitness_check = new FitnessCheck();
+
 
 $(document).ready(function () {
 
