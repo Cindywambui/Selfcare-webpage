@@ -3,9 +3,7 @@
   border-radius: 60px;
   background-color: #010b13;
 }
-img {
-  width: 100%;
-}
+
 .acme-font {
   font-size: 24px;
   font-family: 'Acme', sans-serif;
@@ -17,21 +15,25 @@ img {
   display: none;
   padding-top: 140px;
   height: 60%;
+  width: 100%;
 }
 .patrick-image {
   height: 70%;
   padding-top: 160px;
   display: none;
+  width: 100%;
 }
 .scarlet-image {
   height: 70%;
   padding-top: 150px;
   display: none;
+  width: 100%;
 }
 .drews-image {
   height: 60%;
   padding-top: 170px;
   display: none;
+  width: 100%;
 }
 .card {
   /* background-image: linear-gradient(0deg, lightpink, lightpink); */
@@ -99,6 +101,6 @@ form#testimonial-post {
   display: none;
 }
 h3.new-titles {
-  color: white;
+  color: darkblue;
   font-weight: bold;
 }
