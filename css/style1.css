@@ -1,40 +1,4 @@
 
-.navbar {
-    width: 100%;
-    background-color:lightskyblue;
-    overflow: hidden;
-  }
-  
-  .navbar a {
-    float: left;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
- 
-  }
-  
-  .navbar a:hover {
-    background-color: #000;
-  }
-  
-  .active {
-    background-color:salmon;
-  }
-
-#logo{
-        height: 100px;
-        width: 100px;
-        float: left;
-        margin-right:40px;
-    }
-
-
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-
 #sn{
     display: none;
 }
@@ -56,10 +20,12 @@ align-items: center;
   text-align: center;
 
 }
-
-#header{
-  text-align: center;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  color: blueviolet;
 }
+
+.questionnaire-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 50px;
+  width: auto;
