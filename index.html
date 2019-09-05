@@ -9,35 +9,39 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
+
 </head>
 
 <body>
-    <div class="container">
+    <div id="about-section">
         <div class="container-fluid" id="about">
-            <div class="aboutheader">
-                <header>
-                    <h1><Strong>ABOUT SELF-CARE</Strong></h1>
-                </header>
-            </div>
             <div class="aboutcontent">
-                <h2><strong>What is self-care?</strong></h2>
-                <p>
-                    Self-care can simply be defined as, <strong>"the practice of taking an active role in protecting
-                        one's
-                        own well-being and happiness."</strong>
-                </p><br>
-                <h2><strong>what is the importance of self-care ?</strong></h2>
-                <p>
-                    <em>Why do we need to take care of ourselves?</em>
-                </p>
-                <p>A very good reson to take care of ourseleves is <strong>to produce positive feelings</strong>,
-                    positive feelings improve your confidence and self-esteem.</p>
-                <p>Selfcare is also important <strong>for your familyand friends too.</strong> learn from you, so
-                    setting
-                    functional boundaries to take care of yourself shows them that they too need to put themselves first
-                    and
-                    not overextend or overwork.
-                </p>
+                <div class="aboutheader">
+                    <header class="abouttitle">
+                        <h1><Strong>ABOUT SELF-CARE</Strong></h1>
+                    </header>
+                </div>
+                <div class="abouttext">
+                    <h2><strong>What is self-care?</strong></h2>
+                    <p>
+                        Self-care can simply be defined as, <strong>"the practice of taking an active role in protecting
+                            one's
+                            own well-being and happiness."</strong>
+                    </p><br>
+                    <h2><strong>what is the importance of self-care ?</strong></h2>
+                    <p>
+                        <em>Why do we need to take care of ourselves?</em>
+                    </p>
+                    <p>A very good reson to take care of ourseleves is <strong>to produce positive feelings</strong>,
+                        positive feelings improve your confidence and self-esteem.</p>
+                    <p>Selfcare is also important <strong>for your familyand friends too.</strong> learn from you, so
+                        setting
+                        functional boundaries to take care of yourself shows them that they too need to put themselves
+                        first
+                        and
+                        not overextend or overwork.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="container-fluid" id="types">
@@ -47,17 +51,11 @@
                 </header>
             </div>
             <div class="typecontent">
-                <div class="navigation">
-                    <link href="">
-                    <link rel="stylesheet" href="">
-                    <link rel="stylesheet" href="">
-                    <link rel="stylesheet" href="">
-                </div>
                 <div class="emotionalcontent" id="emotionalcontent">
-                    <ol>
-                        <li>
-                            <h2><strong>Emotional self-care</strong></h2>
-                        </li>
+                    <div id="emotionalcontenttitle" style="cursor: pointer">
+                        <h2><strong>Emotional self-care</strong></h2>
+                    </div>
+                    <div id="emotionalcontenttext">
                         <p>
                             This is , <strong>caring for your emotional needs by identifying what it is you're feeling
                                 and
@@ -180,17 +178,22 @@
                                 </p>
                             </ul>
                         </p>
-                        <li>
-                            <h2><strong>Physical self-care</strong>
-                                <h2>
-                        </li>
+                    </div>
+                    <div id="physicalcontenttitle" style="cursor: pointer">
+                        <h2><strong>Physical self-care</strong>
+                            <h2>
+                    </div>
+                    <div id="physicalcontenttext">
                         <p> This ,<strong>involves activities that improve your physical health such as diet and
                                 excercise.</strong>
                             It also means seeing a doctor when you are sick and taking the time to rest.</p>
                         <p><strong>Various ways of excercising pysical selfcare include:</strong></p>
                         <ul>
                             <li><strong>Eat well</strong></li>
-                            <img src="images/eatwell.webp" alt="">
+                            <div class="physicalimages">
+                                <img src="images/Acai Bowls_ What You Need to Know, Plus 5 Acai Bowl Recipes.jpeg"
+                                    id="eatwell" alt="" height="150px" width="170px">
+                            </div>
                             <p>This doesn’t meant that you have to become a total health nut, but drinking enough water
                                 (try
                                 for 60-80oz per day) and adding in some leafy greens can make a drastic difference in
@@ -204,8 +207,9 @@
                                 Something important to keep in mind – healthy fats are your friend. Some quick and easy
                                 sources are avocados, extra virgin olive oil, salmon, flax and chia seeds.</p>
                             <li><strong>Move your body</strong></li>
-                            <img src="images/getrest.webp" alt="">
-
+                            <div class="physicalimages">
+                                <img src="images/movebody.webp" alt="" height="270px" width="270px">
+                            </div>
                             <p>Getting your blood flowing is a really impactful way to practice physical self care. When
                                 we
                                 move our body, we release endorphins that can help make us feel good.
@@ -223,8 +227,9 @@
                                 <li>Find a local gym or studio and sign up for some classes that might interest you</li>
                             </ul>
                             <li><strong>Create a zen space</strong></li>
-                            <img src="images/zenspace.webp" alt="">
-
+                            <div class="physicalimages">
+                                <img src="images/zenspace.webp" id="zenspace" alt="" height="270px" width="270px">
+                            </div>
                             <p>By creating a peaceful home you are giving yourself a calming space to unwind and relax.
                                 When
                                 you love the space you live in, taking care of yourself doesn’t seem as stressful
@@ -241,7 +246,9 @@
                                 have,
                                 which is certainly something we need to remember to practice with ourselves.</p>
                             <li> <strong>Get enough rest</strong> </li>
-                            <img src="images/getrest.webp" alt="">
+                            <div class="physicalimages">
+                                <img src="images/getrest.webp" alt="" height="270px" width="270px">
+                            </div>
                             <p>Carving out enough time to get as much rest and sleep as possible is a very important
                                 physical self care practice. When we rest, we allow our body to do its natural work like
                                 detox, digest, and balance our hormones.
@@ -266,9 +273,11 @@
                                     be disrupting your sleep</li>
                             </ul>
                         </ul>
-                        <li>
-                            <h2><strong>Mental self-care</strong></h2>
-                        </li>
+                    </div>
+                    <div id="mentalcontenttitle" style="cursor: pointer">
+                        <h2><strong>Mental self-care</strong></h2>
+                    </div>
+                    <div id="mentalcontenttext">
                         <p>Self-care for mental health<strong> means that individuals should develop a healthier
                                 lifestyle
                                 by paying
@@ -468,69 +477,74 @@
                                     house
                                     into a beautiful home was satisfying. While being a maid didn’t cure me, it did help
                                     me
-                                    get to a point where my OCD was no longer impairing my ability to function.</p>
+                                    get to a point where my OCD was no longer impairing my ability to function.
+                                </p>
+                            </ul>
                         </ol>
-                        </ul>
-                        <li>
-                            <h2><strong>Social self-care</strong></h2>
-                        </li>
+                    </div>
+                    <div id="socialcontenttitle" style="cursor: pointer">
+                        <h2><strong>Social self-care</strong></h2>
+                    </div>
+                    <div id="socialcontenttext">
                         <p> This involves <strong>just having fun with the people you love.</strong> It may mean going
                             out to coffee with a
                             best friend or planning a fabulous date night with your spouse. It means talking effectively
                             through conflict, and addressing the emotional needs of the people you love.</p>
                         <p><strong>Various means of practicing social self-care include:</strong></p>
-                        <ul>
+                        <ul style="list-style-type: none">
                             <li>Brunch with friends</li>
                             <li>going on a date</li>
                             <li>making time to call your mom regularly</li>
                         </ul>
-                    </ol>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="quote-section">
         <div class="container-fluid" id="quotesection">
             <div class="container" id="quotesectioncontent">
                 <header>
                     <h1><strong>Be encouraged!</strong></h1>
                 </header>
-                <p><strong>Have a glimpse of our quote section by hovering over any card.</strong></p>
+                <p><strong>Pick a box and get encouraged.</strong></p>
                 <div id="quoterows">
                     <div class="row">
-                        <div class="col-md-3" id="quote1">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote1">
                             <h3>Emotional self-care</h3>
                         </div>
-                        <div class="col-md-3" id="quote2">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote2">
                             <div id="quote2content">
                                 <p>If we carry intergenerational trauma (and we do),then we also carry integenerational
                                     wisdom.It's in our genes and in our DNA.</p>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote3">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote3">
                             <div id="quote3content">
                                 <p>In order to love who you are, you cannot hate the experiences that shaped you.</p>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote4">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote4">
                             <div id="quote4content">
                                 <p>If it requires fake smiling I'm not going.</p>
                             </div>
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="col-md-3" id="quote5">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote5">
                             <h3>Physical self care</h3>
                         </div>
-                        <div class="col-md-3" id="quote6">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote6">
                             <div class="quote6content">
                                 <p>Our bodies are gardens to which our wills are gardeners.</p>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote7">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote7">
                             <div class="quote7content">
                                 <p>It's good to do uncomfortable things.It's weight training for life.</p>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote8">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote8">
                             <div class="quote8content">
                                 <p>An empty lantern provides no light .Self-care is the fuel that allows your light to
                                     shine.
@@ -539,23 +553,23 @@
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="col-md-3" id="quote9">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote9">
                             <h3>Mental self-care</h3>
                         </div>
-                        <div class="col-md-3" id="quote10">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote10">
                             <div id="quote10content">
                                 <P>Once you clarify your vision and become the person that is needed to create it,the
                                     resources
                                     will come.</P>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote11">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote11">
                             <div id="quote11content">
                                 <P>Be cautious about your consumption of traumatic news, pace yourself don’t overdo it.
                                 </P>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote12">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote12">
                             <div id="quote12content">
                                 <P>Stop using social media followers /social status to determine whether or not someone
                                     is
@@ -564,22 +578,22 @@
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="col-md-3" id="quote13">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote13">
                             <h3>Social self-care</h3>
                         </div>
-                        <div class="col-md-3" id="quote14">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote14">
                             <div id="quote14content">
                                 <p>Make sure you dont start seeing yourself through the eyes of those who dont value
                                     you.Know
                                     your worth even if they dont.</p>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote15">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote15">
                             <div id="quote15content">
                                 <p>Focus on the support thats showing up not the people you thought would show up.</p>
                             </div>
                         </div>
-                        <div class="col-md-3" id="quote16">
+                        <div class="col-md-3" style="min-height: 190px;" id="quote16">
                             <div id="quote16content">
                                 <p>Dont let this 'self love' trend have you 50 & alone because you walked away from
                                     everything
@@ -591,6 +605,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
