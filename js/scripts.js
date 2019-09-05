@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $("#quote2").mouseenter(function () {
         $("#quote2content").fadeIn();
@@ -72,3 +73,9 @@ $(document).ready(function () {
         $("#emotionalcontenttext").toggle();       
     })
 });
+function myFunction(dropDown) {
+  dropDown.classList.toggle("change");
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
