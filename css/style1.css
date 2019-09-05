@@ -5,7 +5,6 @@
     overflow: hidden;
   }
   
-
   .navbar a {
     float: left;
     color: white;
@@ -42,8 +41,25 @@
 .btn{
   background-color: green;
   color: white;
-  
+
 }
 
+#questions{
+  text-align: center;
+}
+.physicals{
+text-align: center;
+align-items: center;
+}
 
-  }
+.social{
+  text-align: center;
+
+}
+
+#header{
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  color: blueviolet;
+}
