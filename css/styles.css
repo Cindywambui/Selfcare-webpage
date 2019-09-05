@@ -1,8 +1,7 @@
-#quotesection {
-    background-image: url(../images/Tropical\ Beach\ Palm\ Trees\ Ocean\ Sea\ Nature\ Sunset\ Landscape\ Poster.jpeg);
+#quotesection { 
+    background-image: url(../images/ocean3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5%;
 }
 #quotesectioncontent {
    
@@ -165,3 +164,77 @@
 #quote16content {
     display:none;
 }
+
+.physicalimages {
+    float:right;
+}
+#about {  
+    background-image: url(../images/palmy2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom:5%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center; 
+}
+.aboutcontent {
+    background-color: rgba(36, 35, 35, 0.5);
+    color:white;
+    padding-bottom:5%;
+    padding-top: 5%;   
+}
+#emotionalcontenttext {
+    display: none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+}
+#physicalcontenttext {
+    display:none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+}
+#mentalcontenttext {
+    display:none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+}
+#socialcontenttext {
+    display:none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+    
+}
+.typeheader {    
+    color:grey;
+    padding-top: 2%;
+    padding-bottom:1%;
+}
+#types {
+    text-align: center;
+}
+
