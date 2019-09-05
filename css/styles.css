@@ -1,3 +1,243 @@
+#quotesection { 
+    background-image: url(../images/ocean3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#quotesectioncontent {
+   
+    padding-top: 5%;
+    padding-bottom: 3%;
+    border-radius: 10%;
+    color:white; 
+    margin-top:10%;   
+}
+
+#quote1 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+
+}
+#quote2 {
+    
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote3 {
+    
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote4 {
+    
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote5 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote6 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote7 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote8 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote9 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote10 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote11 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote12 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote13 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote14 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote15 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote16 {
+    background-color: rgba(54, 28, 3, 0.5);
+    border-radius: 10%;
+    padding-bottom: 30pt;
+    padding-top: 30pt;
+    border:solid white 1pt;
+}
+#quote2content {
+    display:none;
+}
+#quote3content {
+    display:none;
+}
+#quote4content {
+    display:none;
+}
+.quote6content {
+    display:none;
+}
+.quote7content {
+    display:none;
+}
+.quote8content {
+    display:none;
+}
+#quote10content {
+    display:none;
+}
+#quote11content {
+    display:none;
+}
+#quote12content {
+    display:none;
+}
+#quote14content {
+    display:none;
+}
+#quote15content {
+    display:none;
+}
+#quote16content {
+    display:none;
+}
+
+.physicalimages {
+    float:right;
+}
+#about {  
+    background-image: url(../images/palmy2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom:5%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center; 
+}
+.aboutcontent {
+    background-color: rgba(36, 35, 35, 0.5);
+    color:white;
+    padding-bottom:5%;
+    padding-top: 5%;   
+}
+#emotionalcontenttext {
+    display: none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+}
+#physicalcontenttext {
+    display:none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+}
+#mentalcontenttext {
+    display:none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+}
+#socialcontenttext {
+    display:none;
+    background-color:  rgba(54, 28, 3, 0.5);
+    border:solid black 2pt;
+    padding-left:3%;
+    padding-top:3%;
+    padding-right:3%;
+    padding-bottom:3%;
+    border-radius:5%;
+    font: size 150%;
+    
+}
+.typeheader {    
+    color:grey;
+    padding-top: 2%;
+    padding-bottom:1%;
+}
+#types {
+    text-align: center;
+}
+
 /* @import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
 body{
   align-content: center;
@@ -93,58 +333,4 @@ color: white;
 .show {display:block;
 }
 
-/* QUESTIONNAIRE */
 
-#sn{
-  display: none;
-}
-#btn{
-text-decoration: none;
-display: inline-block;
-padding: 8px 16px;
-margin-left: 40%;
-}
-
-#btn:hover {
-background-color:blue;
-color:  white;
-}
-
-#Previous {
-background-color:blue;
-color: black;
-}
-
-#Next {
-background-color: #4CAF50;
-color: white;
-}
-#header{
-margin-top: 0;
-background-color: white;
-margin-left: 30%;
-
-}
-label {
-display: block;
-}
-
-input {
-width: 30px;
-margin-left: 20px;
-}
-
-h2 {
-clear: both;
-padding-top: 20px;
-}
-
-.psol{
-display: none;
-} 
-.ssol{
-display: none;
-}
-.col-lg-4:hover{
-padding: 15px;
-}
