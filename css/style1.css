@@ -1,4 +1,11 @@
 
+#questionnaire {
+  background-image: url(../img/fit.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #sn{
     display: none;
 }
@@ -18,15 +25,43 @@ align-items: center;
 
 .social{
   text-align: center;
+  display: none;
 
 }
+.mental {
+  text-align: center;
+  display: none;
+}
+.emotional {
+  text-align: center;
+  display: none;
 }
 
 .questionnaire-card {
-  position: absolute;
+  /* position: absolute; */
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  /* transform: translate(-50%, -50%); */
   margin: 50px;
-  width: auto;
+  font-weight: normal;
+  font-family: 'Bree Serif', sans-serif;
+  border-style: hidden;
+  border-radius: 80px;
+  /* width: auto; */
 }
+#advice {
+  font-weight: bold;
+}
+#physical-advice {
+  font-weight: bold;
+}
+#mental-advice {
+  font-weight: bold;
+}
+#emotional-advice {
+  font-weight: bold;
+}
+#social-advice {
+  font-weight: bold;
+}
+

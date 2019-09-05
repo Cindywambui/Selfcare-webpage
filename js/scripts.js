@@ -1,5 +1,4 @@
 
-new WOW().init();
 class FitnessCheck {
 
     constructor() {
@@ -17,14 +16,14 @@ class FitnessCheck {
     * Gets the hydration, sleep, health and breath points
     * from the radio inputs the user gave and sums their values
     * to give the total physical status points
-    * 
+    *
     * @returns {totalPhysicalStatusPoints}
     */
     getPhysicalStatusPoints() {
-        var hydrationPoints = parseInt($("input[name='hydration']:checked").val());
-        var sleepPoints = parseInt($("input[name='sleep']:checked").val());
-        var healthPoints = parseInt($("input[name='health']:checked").val());
-        var breathPoints = parseInt($("input[name='breaths']:checked").val());
+        var hydrationPoints = parseInt($("input[name=hydration]:checked").val());
+        var sleepPoints = parseInt($("input[name=sleep]:checked").val());
+        var healthPoints = parseInt($("input[name=health]:checked").val());
+        var breathPoints = parseInt($("input[name=breaths]:checked").val());
 
 
         var totalPhysicalStatusPoints = hydrationPoints + sleepPoints + healthPoints + breathPoints;
@@ -35,25 +34,26 @@ class FitnessCheck {
 
         return totalPhysicalStatusPoints
 
-  
+
     }
 
     /**
     * Gets the self-care, family, time, talking and happy points
     * from the radio inputs the user gave and sums their values
     * to give the total social status points.
-    * 
+    *
     * @returns {totalSocialStatusPoints}
     */
     getSocialStatusPoints() {
-        var selfPoints = parseInt($("input[name='yourself']:checked").val());
-        var familyPoints = parseInt($("input[name='family']:checked").val());
-        var timePoints = parseInt($("input[name='time']:checked").val());
-        var talkPoints = parseInt($("input[name='talk']:checked").val());
-        var happyPoints = parseInt($("input[name='happy']:checked").val());
+        var selfPoints = parseInt($("input[name=yourself]:checked").val());
+        var familyPoints = parseInt($("input[name=family]:checked").val());
+        var timePoints = parseInt($("input[name=time]:checked").val());
+        var talkPoints = parseInt($("input[name=talk]:checked").val());
+        // var happyPoints = parseInt($("input[name=happy]:checked").val());
 
 
-        var totalSocialStatusPoints = selfPoints + familyPoints + timePoints + talkPoints + happyPoints;
+        var totalSocialStatusPoints = selfPoints + familyPoints + timePoints + talkPoints;
+
 
         // console.log(totalSocialStatusPoints);
 
@@ -68,18 +68,18 @@ class FitnessCheck {
     * Gets the trust, lonely, mood, thought and struggle points
     * from the radio inputs the user gave and sums their values
     * to give the total mental status points.
-    * 
+    *
     * @returns {totalMentalStatusPoints}
     */
     getMentalStatusPoints() {
-        var trustPoints = parseInt($("input[name='trust']:checked").val());
-        var lonelyPoints = parseInt($("input[name='lonely']:checked").val());
-        var moodPoints = parseInt($("input[name='mood']:checked").val());
-        var thoughtPoints = parseInt($("input[name='think']:checked").val());
-        var strugglePoints = parseInt($("input[name='struggle']:checked").val());
+        var trustPoints = parseInt($("input[name=trust]:checked").val());
+        var lonelyPoints = parseInt($("input[name=lonely]:checked").val());
+        var moodPoints = parseInt($("input[name=mood]:checked").val());
+        // var thoughtPoints = parseInt($("input[name=think]:checked").val());
+        var strugglePoints = parseInt($("input[name=struggle]:checked").val());
 
 
-        var totalMentalStatusPoints = trustPoints + lonelyPoints + moodPoints + thoughtPoints + strugglePoints;
+        var totalMentalStatusPoints = trustPoints + lonelyPoints + moodPoints + strugglePoints;
 
         // console.log(totalMentalStatusPoints);
 
@@ -94,14 +94,14 @@ class FitnessCheck {
     * Gets the emotional-status, loss, relationship and overall-health points
     * from the radio inputs the user gave and sums their values
     * to give the total emotional status points.
-    * 
+    *
     * @returns {totalEmotionalStatusPoints}
     */
     getEmotionalStatusPoints() {
-        var emotionalStatusPoints = parseInt($("input[name='emotional-status']:checked").val());
-        var lossPoints = parseInt($("input[name='loss']:checked").val());
-        var relationshipPoints = parseInt($("input[name='relationship']:checked").val());
-        var overallHealthPoints = parseInt($("input[name='overall-health']:checked").val());
+        var emotionalStatusPoints = parseInt($("input[name=emotional-status]:checked").val());
+        var lossPoints = parseInt($("input[name=loss]:checked").val());
+        var relationshipPoints = parseInt($("input[name=relationship]:checked").val());
+        var overallHealthPoints = parseInt($("input[name=overall-health]:checked").val());
 
 
         var totalEmotionalStatusPoints = emotionalStatusPoints + lossPoints + relationshipPoints + overallHealthPoints;
@@ -144,20 +144,33 @@ class FitnessCheck {
     }
 
 
-    
+
     populateFitnessReport() {
 
-        var overallFitnessPerc = this.calculatelFitnessPerc(this.totalFitnessPoints, 80)
-        var physicalFitnessPerc = this.calculateTotalFitnessPoints(this.physicalStatusPoints, 20)
-        var emotionalFitnessPerc = this.calculateTotalFitnessPoints(this.emotionalStatusPoints, 20)
-        var mentalFitnessPerc = this.calculateTotalFitnessPoints(this.mentalStatusPoints, 20)
-        var socialFitnessPerc = this.calculateTotalFitnessPoints(this.socialStatusPoints, 20)
+        var overallFitnessPerc = Math.round(this.calculatelFitnessPerc(this.totalFitnessPoints, 80));
+        var physicalFitnessPerc = Math.round(this.calculatelFitnessPerc(this.physicalStatusPoints, 20))
+        var emotionalFitnessPerc = Math.round(this.calculatelFitnessPerc(this.emotionalStatusPoints, 20))
+        var mentalFitnessPerc = Math.round(this.calculatelFitnessPerc(this.mentalStatusPoints, 20))
+        var socialFitnessPerc = Math.round(this.calculatelFitnessPerc(this.socialStatusPoints, 20));
 
         $('#overall_fit').html(overallFitnessPerc + '%')
         $('#social_fit').html(socialFitnessPerc + '%')
         $('#mental_fit').html(mentalFitnessPerc + '%')
         $('#phyc_fit').html(physicalFitnessPerc + '%')
         $('#emot_fit').html(emotionalFitnessPerc + '%')
+        if (overallFitnessPerc <= 50 || physicalFitnessPerc < 50 || socialFitnessPerc < 50 || mentalFitnessPerc < 50 || emotionalFitnessPerc < 50) {
+          $("p#advice").text("In the sections that you scored less than 50%, read the relevant advice!: ");
+          $("p#physical-advice").text("Physical selfcare: ")
+          $("ul#physical-list").text(`Go for regular walks, sleep for at least 6 hours, stay hydrated, WORKOUT!!`);
+          $("p#emotional-advice").text("Emotional selfcare: ")
+          $("ul#emotional-list").text("See a professional such as a therapist, Write in a journal, Create art, Listen to calming happy music");
+          $("p#social-advice").text("Social selfcare: ")
+          $("ul#social-list").text("Go spend more time with family and friends!!");
+          $("p#mental-advice").text("Mental selfcare: ")
+          $("ul#mental-list").text("Read a book, Solve puzzles, Play boardgames");
+        } else {
+            $("p#advice").text("You are above average in every section so you are doing relatively well, but there is always room to improve! Keep checking on yourself and check our quote section!");
+        }
 
 
 
@@ -172,7 +185,7 @@ $(document).ready(function () {
 
 
     $("button.physical.next").click(function () {
-        fitness_check.getPhysicalStatusPoints()
+        fitness_check.getPhysicalStatusPoints();
         $("div.physicals").fadeOut(1);
         $("div.social").fadeIn(1);
     });
@@ -187,7 +200,7 @@ $(document).ready(function () {
         $("div.mental").fadeIn(1);
     });
     $("button.mental.back").click(function () {
-        fitness_check.getPhysicalStatusPoints()
+        fitness_check.getMentalStatusPoints()
         $("div.mental").fadeOut(1);
         $("div.social").fadeIn(1);
     });

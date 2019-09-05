@@ -1,582 +1,595 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Selfcare</title>
     <link rel="icon" type="img/icon" href="img/logo.jpeg">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Dancing+Script:400,700&display=swap" rel="stylesheet">
 </head>
 
-<body background="img/fit.jpg">
-
-
-    <div class="container">
-        <div class="shadow-lg p-3 mb-5 bg-white rounded questionnaire-card">
-
-            <div class="physicals">
-                <img id="psil" src="img/ps.jpeg">
-
-                <h1 id="ps header">Physical selfcare</h1>
-                <hr>
-
-                <h2>Do you feel hydrated</h2>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_1" value="5">
-                    <label class="form-check-label" for="phyc_q_1_a_1">
-                        Yes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_2" value="0">
-                    <label class="form-check-label" for="phyc_q_1_a_2">
-                        No
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_3" value="1" checked>
-                    <label class="form-check-label" for="phyc_q_1_a_3">
-                        Maybe
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_4" value="2">
-                    <label class="form-check-label" for="phyc_q_1_a_4">
-                        I dont know
-                    </label>
-                </div>
-                <br>
-                <h2>Do you sleep for 7-8 hours at night?</h2>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_1" value="5" checked>
-                    <label class="form-check-label" for="phyc_q_2_a_1">
-                        Yes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_2" value="1">
-                    <label class="form-check-label" for="phyc_q_2_a_2">
-                        Sometimes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_3" value="2" checked>
-                    <label class="form-check-label" for="phyc_q_2_a_3">
-                        I try to
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_4" value="0">
-                    <label class="form-check-label" for="phyc_q_2_a_4">
-                        I cannot
-                    </label>
-                </div>
-
-                <h2>Do you feel healthy and fit ?</h2>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="health" id="phyc_q_3_a_1" value="0" checked>
-                    <label class="form-check-label" for="phyc_q_3_a_1">
-                        Nope
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="health" id="phyc_q_3_a_2" value="2">
-                    <label class="form-check-label" for="phyc_q_3_a_2">
-                        Somehow
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="health" id="phyc_q_3_a_3" value="5" checked>
-                    <label class="form-check-label" for="phyc_q_3_a_3">
-                        Completely
-                    </label>
-                </div>
-
-
-                <h2>How many deep breaths do you take everyday ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_1" value="0" checked>
-                    <label class="form-check-label" for="phyc_q_4_a_1">
-                        One
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_2" value="2">
-                    <label class="form-check-label" for="phyc_q_4_a_2">
-                        Five
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_3" value="3" checked>
-                    <label class="form-check-label" for="phyc_q_4_a_3">
-                        Ten
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_4" value="5">
-                    <label class="form-check-label" for="phyc_q_4_a_4">
-                        Twenty
-                    </label>
-                </div>
-
-
-                <button type=button class="btn btn-primary next physical" name="button">Next</button>
-
-            </div>
-
-            <div class="social">
-                <img id="ssil" src="img/ss.jpeg" alt="">
-
-                <h1 id="ss header"> Social selfcare</h1>
-                <hr>
-
-                <h2>How would you describe yourself ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_1" value="5" checked>
-                    <label class="form-check-label" for="social_q_1_a_1">
-                        Lively
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_2" value="0">
-                    <label class="form-check-label" for="social_q_1_a_2">
-                        Boring/Sad
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_3" value="2" checked>
-                    <label class="form-check-label" for="social_q_1_a_3">
-                        Shy/Introverted
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_4" value="3">
-                    <label class="form-check-label" for="social_q_1_a_4">
-                        I cant explain
-                    </label>
-                </div>
-
-
-                <h2>Do you have a supportive family?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="family" id="social_q_2_a_1" value="0" checked>
-                    <label class="form-check-label" for="social_q_2_a_1">
-                        Not all
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="family" id="social_q_2_a_2" value="5">
-                    <label class="form-check-label" for="social_q_2_a_2">
-                        Yes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="family" id="social_q_2_a_3" value="2" checked>
-                    <label class="form-check-label" for="social_q_2_a_3">
-                        Not as much as I would like
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="family" id="social_q_2_a_4" value="3">
-                    <label class="form-check-label" for="social_q_2_a_4">
-                        Dont have a family
-                    </label>
-                </div>
-
-                <h2>Do you spend time with people who make you happy ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="time" id="social_q_3_a_1" value="0" checked>
-                    <label class="form-check-label" for="social_q_3_a_1">
-                        No,I dont(dont have the time)
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="time" id="social_q_3_a_2" value="0">
-                    <label class="form-check-label" for="social_q_3_a_2">
-                        I try
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="time" id="social_q_3_a_3" value="5" checked>
-                    <label class="form-check-label" for="social_q_3_a_3">
-                        Sometimes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="time" id="social_q_3_a_4" value="0">
-                    <label class="form-check-label" for="social_q_3_a_4">
-                        Most of the time
-                    </label>
-                </div>
-
-
-                <h2>Have you talked to someone today and how many ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_1" value="2" checked>
-                    <label class="form-check-label" for="social_q_4_a_1">
-                        Yes,3
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_2" value="1">
-                    <label class="form-check-label" for="social_q_4_a_2">
-                        Yes,1
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_3" value="0" checked>
-                    <label class="form-check-label" for="social_q_4_a_3">
-                        No
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_4" value="0">
-                    <label class="form-check-label" for="social_q_4_a_4">
-                        Yes more than five
-                    </label>
-                </div>
-
-
-
-                <h2>What makes you happy ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_1" value="0" checked>
-                    <label class="form-check-label" for="social_q_4_a_1">
-                        Nothing really
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_2" value="4">
-                    <label class="form-check-label" for="social_q_4_a_2">
-                        Spending time with my family/friends
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_3" value="2" checked>
-                    <label class="form-check-label" for="social_q_4_a_3">
-                        Eating,drinking
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_4" value="5">
-                    <label class="form-check-label" for="social_q_4_a_4">
-                        Engaging in social activities(going out to explore and meet new people and new things)
-                    </label>
-                </div>
-
-
-                <button type=button class="btn btn-primary back social" name="button">Back</button>
-                <button type=button class="btn btn-primary next social" name="button">Next</button>
-
-            </div>
-
-            <div class="mental">
-                <h1 id="ms header">Mental selfcare</h1>
-                <hr>
-                <img id="msil" src="img/ms.jpeg">
-
-                <h2>Do you trust anyone in your life ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_1" value="5" checked>
-                    <label class="form-check-label" for="mental_q_1_a_1">
-                        Yes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_2" value="0">
-                    <label class="form-check-label" for="mental_q_1_a_2">
-                        Not really
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_3" value="0" checked>
-                    <label class="form-check-label" for="mental_q_1_a_3">
-                        Maybe
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_4" value="0">
-                    <label class="form-check-label" for="mental_q_1_a_4">
-                        I dont even trust myself
-                    </label>
-                </div>
-
-
-
-                <h2>Do you get lonely sometimes ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_1" value="4" checked>
-                    <label class="form-check-label" for="mental_q_2_a_1">
-                        Never,always with
-                        someone
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_2" value="1">
-                    <label class="form-check-label" for="mental_q_2_a_2">
-                        Yes, almost all the
-                        time
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_3" value="3" checked>
-                    <label class="form-check-label" for="mental_q_2_a_3">
-                        Yes,sometimes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_4" value="0">
-                    <label class="form-check-label" for="mental_q_2_a_4">
-                        Whenever am not
-                        busy
-                    </label>
-                </div>
-
-
-                <h2>What mood are you usually in most ofthe time?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_1" value="2" checked>
-                    <label class="form-check-label" for="mental_q_3_a_1">
-                        Sad
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_2" value="5">
-                    <label class="form-check-label" for="mental_q_3_a_2">
-                        Happy
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_3" value="0" checked>
-                    <label class="form-check-label" for="mental_q_3_a_3">
-                        Angry/moody
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_4" value="3">
-                    <label class="form-check-label" for="mental_q_3_a_4">
-                        Depends on my current
-                        situation
-                    </label>
-                </div>
-
-
-                <h2>What do you think about first when youn wake up?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="think" id="mental_q_4_a_1" value="5" checked>
-                    <label class="form-check-label" for="mental_q_4_a_1">
-                        Myself
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="think" id="mental_q_4_a_2" value="5">
-                    <label class="form-check-label" for="mental_q_4_a_2">
-                        My family and
-                        friends
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="think" id="mental_q_4_a_3" value="0" checked>
-                    <label class="form-check-label" for="mental_q_4_a_3">
-                        Nothing
-                    </label>
-                </div>
-
-
-                <h2>What do you struggle dealing with ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_1" value="2" checked>
-                    <label class="form-check-label" for="mental_q_5_a_1">
-                        Anxiety
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_2" value="3">
-                    <label class="form-check-label" for="mental_q_5_a_2">
-                        Depression
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_3" value="0" checked>
-                    <label class="form-check-label" for="mental_q_5_a_3">
-                        Nothing
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_4" value="3" checked>
-                    <label class="form-check-label" for="mental_q_5_a_4">
-                        Peer pressure
-                    </label>
-                </div>
-
-                <button type=button class="btn btn-primary back mental" name="button">Back</button>
-                <button type=button class="btn btn-primary next mental" name="button">Next</button>
-            </div>
-
-
-            <div class="emotional">
-                <h1 id="es header">Emotional selfcare</h1>
-                <hr>
-                <img id="esil" src="img/es .jpeg" alt="">
-
-                <h2>How to would you describe your emotional status</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_1"
-                        value="5" checked>
-                    <label class="form-check-label" for="emotional_q_1_a_1">
-                        Yes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_2"
-                        value="0">
-                    <label class="form-check-label" for="emotional_q_1_a_2">
-                        No
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_3"
-                        value="0" checked>
-                    <label class="form-check-label" for="emotional_q_1_a_3">
-                        Maybe
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_4"
-                        value="0" checked>
-                    <label class="form-check-label" for="emotional_q_1_a_4">
-                        I dont know
-                    </label>
-                </div>
-
-                <h2>Have your lost someone close to you?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="loss" id="emotional_q_2_a_1" value="0" checked>
-                    <label class="form-check-label" for="emotional_q_2_a_1">
-                        One
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="loss" id="emotional_q_2_a_2" value="5">
-                    <label class="form-check-label" for="emotional_q_2_a_2">
-                        Five
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="loss" id="emotional_q_2_a_3" value="0" checked>
-                    <label class="form-check-label" for="emotional_q_2_a_3">
-                        Ten
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="loss" id="emotional_q_2_a_4" value="0" checked>
-                    <label class="form-check-label" for="emotional_q_2_a_4">
-                        Twenty
-                    </label>
-                </div>
-
-                <h2>Can you relate to the opposite sex?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="relationship" id="emotional_q_3_a_1" value="5">
-                    <label class="form-check-label" for="emotional_q_3_a_1">
-                        Yes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="relationship" id="emotional_q_3_a_2" value="0">
-                    <label class="form-check-label" for="emotional_q_3_a_2">
-                        Sometimes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="relationship" id="emotional_q_3_a_3" value="0">
-                    <label class="form-check-label" for="emotional_q_3_a_3">
-                        I try to
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="relationship" id="emotional_q_3_a_4" value="0"
-                        checked>
-                    <label class="form-check-label" for="emotional_q_3_a_4">
-                        I cannot
-                    </label>
-                </div>
-
-                <h2>Do you feel healthy and fit ?</h2>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="overall-health" id="emotional_q_4_a_1" value="0">
-                    <label class="form-check-label" for="emotional_q_4_a_1">
-                        Nope
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="overall-health" id="emotional_q_4_a_2" value="5">
-                    <label class="form-check-label" for="emotional_q_4_a_2">
-                        Somehow
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="overall-health" id="emotional_q_4_a_3" value="0"
-                        checked>
-                    <label class="form-check-label" for="emotional_q_4_a_3">
-                        Completely
-                    </label>
-                </div>
-
-                <button type=button class="btn btn-primary back emotional" name="button">Back</button>
-                <button type=button class="btn btn-primary submit emotional" name="button" data-toggle="modal"
-                    data-target="#exampleModalCenter">Submit</button>
-
-
-            </div>
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-
-                    <div class="modal-body">
-                        You have an overall fitness percantage of <b><span id="overall_fit"></span></b>
-                    </div>
-                    <div class="modal-footer">
-                        
-                        <br>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
+<body>
+  <div id="questionnaire">
+    <div class="container-fluid push">
+      <h2 style="text-align: center; font-family: 'Dancing Script', cursive; font-size: 46px; font-weight: bold">QUESTIONNAIRE</h2>
+
+      <div class="container">
+          <div class="shadow-lg p-3 mb-5 bg-white questionnaire-card">
+
+              <div class="physicals">
+                  <img id="psil" src="img/ps.jpeg">
+
+                  <h1 id="ps header">Physical selfcare</h1>
+                  <hr>
+
+                  <h2>Do you drink water regularly?</h2>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_1" value="5" checked>
+                      <label class="form-check-label" for="phyc_q_1_a_1">
+                          Yes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_2" value="0">
+                      <label class="form-check-label" for="phyc_q_1_a_2">
+                          No
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_3" value="2" checked>
+                      <label class="form-check-label" for="phyc_q_1_a_3">
+                          Mostly
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="hydration" id="phyc_q_1_a_4" value="1">
+                      <label class="form-check-label" for="phyc_q_1_a_4">
+                          Not that often
+                      </label>
+                  </div>
+                  <br>
+                  <h2>Do you sleep for 7-8 hours at night?</h2>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_1" value="5" checked>
+                      <label class="form-check-label" for="phyc_q_2_a_1">
+                          Yes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_2" value="1">
+                      <label class="form-check-label" for="phyc_q_2_a_2">
+                          Sometimes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_3" value="2" checked>
+                      <label class="form-check-label" for="phyc_q_2_a_3">
+                          I try to
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="sleep" id="phyc_q_2_a_4" value="0">
+                      <label class="form-check-label" for="phyc_q_2_a_4">
+                          No
+                      </label>
+                  </div>
+
+                  <h2>Do you feel healthy and fit ?</h2>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="health" id="phyc_q_3_a_1" value="0" checked>
+                      <label class="form-check-label" for="phyc_q_3_a_1">
+                          Nope
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="health" id="phyc_q_3_a_2" value="2">
+                      <label class="form-check-label" for="phyc_q_3_a_2">
+                          Somehow
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="health" id="phyc_q_3_a_3" value="5" checked>
+                      <label class="form-check-label" for="phyc_q_3_a_3">
+                          Completely
+                      </label>
+                  </div>
+
+
+                  <h2>How many deep breaths do you take everyday ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_1" value="0" checked>
+                      <label class="form-check-label" for="phyc_q_4_a_1">
+                          One
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_2" value="2">
+                      <label class="form-check-label" for="phyc_q_4_a_2">
+                          Five
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_3" value="3" checked>
+                      <label class="form-check-label" for="phyc_q_4_a_3">
+                          Ten
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="breaths" id="phyc_q_4_a_4" value="5">
+                      <label class="form-check-label" for="phyc_q_4_a_4">
+                          Twenty
+                      </label>
+                  </div>
+
+
+                  <button type=button class="btn btn-primary next physical" name="button">Next</button>
+
+              </div>
+
+              <div class="social">
+                  <img id="ssil" src="img/ss.jpeg" alt="">
+
+                  <h1 id="ss header"> Social selfcare</h1>
+                  <hr>
+
+                  <h2>How would you describe yourself ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_1" value="5" checked>
+                      <label class="form-check-label" for="social_q_1_a_1">
+                          Lively
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_2" value="1">
+                      <label class="form-check-label" for="social_q_1_a_2">
+                          Boring/Sad
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_3" value="3" checked>
+                      <label class="form-check-label" for="social_q_1_a_3">
+                          Shy/Introverted
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="yourself" id="social_q_1_a_4" value="0">
+                      <label class="form-check-label" for="social_q_1_a_4">
+                          I cant explain
+                      </label>
+                  </div>
+
+
+                  <h2>Do you have a supportive family?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="family" id="social_q_2_a_1" value="1" checked>
+                      <label class="form-check-label" for="social_q_2_a_1">
+                          Not at all
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="family" id="social_q_2_a_2" value="5">
+                      <label class="form-check-label" for="social_q_2_a_2">
+                          Yes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="family" id="social_q_2_a_3" value="2" checked>
+                      <label class="form-check-label" for="social_q_2_a_3">
+                          Not as supportive as I would like
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="family" id="social_q_2_a_4" value="0">
+                      <label class="form-check-label" for="social_q_2_a_4">
+                          Dont have a family
+                      </label>
+                  </div>
+
+                  <h2>Do you spend time with people who make you happy ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="time" id="social_q_3_a_1" value="0" checked>
+                      <label class="form-check-label" for="social_q_3_a_1">
+                          Rarely
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="time" id="social_q_3_a_2" value="1">
+                      <label class="form-check-label" for="social_q_3_a_2">
+                          Not alot,I feel like I don't have the time
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="time" id="social_q_3_a_3" value="3" checked>
+                      <label class="form-check-label" for="social_q_3_a_3">
+                          Sometimes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="time" id="social_q_3_a_4" value="5">
+                      <label class="form-check-label" for="social_q_3_a_4">
+                          Most of the time
+                      </label>
+                  </div>
+
+
+                  <h2>Have you talked to someone today and how many ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_1" value="3" checked>
+                      <label class="form-check-label" for="social_q_4_a_1">
+                          Yes,3
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_2" value="1">
+                      <label class="form-check-label" for="social_q_4_a_2">
+                          Yes,1
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_3" value="0" checked>
+                      <label class="form-check-label" for="social_q_4_a_3">
+                          No
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="talk" id="social_q_4_a_4" value="5">
+                      <label class="form-check-label" for="social_q_4_a_4">
+                          Yes more than five
+                      </label>
+                  </div>
+
+
+  <!--
+                  <h2>What makes you happy ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_1" value="0" checked>
+                      <label class="form-check-label" for="social_q_4_a_1">
+                          Nothing really
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_2" value="4">
+                      <label class="form-check-label" for="social_q_4_a_2">
+                          Spending time with my family/friends
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_3" value="2" checked>
+                      <label class="form-check-label" for="social_q_4_a_3">
+                          Eating,drinking
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="happy" id="social_q_4_a_4" value="5">
+                      <label class="form-check-label" for="social_q_4_a_4">
+                          Engaging in social activities(going out to explore and meet new people and new things)
+                      </label>
+                  </div> -->
+
+
+                  <button type=button class="btn btn-primary back social" name="button">Back</button>
+                  <button type=button class="btn btn-primary next social" name="button">Next</button>
+
+              </div>
+
+              <div class="mental">
+                  <h1 id="ms header">Mental selfcare</h1>
+                  <hr>
+                  <img id="msil" src="img/ms.jpeg">
+
+                  <h2>Do you trust anyone in your life ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_1" value="5" checked>
+                      <label class="form-check-label" for="mental_q_1_a_1">
+                          Yes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_2" value="1">
+                      <label class="form-check-label" for="mental_q_1_a_2">
+                          Not really
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_3" value="3" checked>
+                      <label class="form-check-label" for="mental_q_1_a_3">
+                          Maybe
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="trust" id="mental_q_1_a_4" value="0">
+                      <label class="form-check-label" for="mental_q_1_a_4">
+                          I dont even trust myself
+                      </label>
+                  </div>
+
+
+
+                  <h2>Do you get lonely sometimes ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_1" value="5" checked>
+                      <label class="form-check-label" for="mental_q_2_a_1">
+                          Never,always with
+                          someone
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_2" value="0">
+                      <label class="form-check-label" for="mental_q_2_a_2">
+                          Yes, almost all the
+                          time
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_3" value="2" checked>
+                      <label class="form-check-label" for="mental_q_2_a_3">
+                          Yes,sometimes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="lonely" id="mental_q_2_a_4" value="3">
+                      <label class="form-check-label" for="mental_q_2_a_4">
+                          Whenever I am not
+                          busy
+                      </label>
+                  </div>
+
+
+                  <h2>What mood are you usually in most of the time?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_1" value="0" checked>
+                      <label class="form-check-label" for="mental_q_3_a_1">
+                          Sad
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_2" value="5">
+                      <label class="form-check-label" for="mental_q_3_a_2">
+                          Happy
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_3" value="1" checked>
+                      <label class="form-check-label" for="mental_q_3_a_3">
+                          Angry/moody
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mood" id="mental_q_3_a_4" value="2">
+                      <label class="form-check-label" for="mental_q_3_a_4">
+                          Depends on my current
+                          situation
+                      </label>
+                  </div>
+
+
+                  <!-- <h2>What do you think about first when you wake up?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="think" id="mental_q_4_a_1" value="5" checked>
+                      <label class="form-check-label" for="mental_q_4_a_1">
+                          Myself
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="think" id="mental_q_4_a_2" value="4">
+                      <label class="form-check-label" for="mental_q_4_a_2">
+                          My family and
+                          friends
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="think" id="mental_q_4_a_3" value="0" checked>
+                      <label class="form-check-label" for="mental_q_4_a_3">
+                          Nothing
+                      </label>
+                  </div> -->
+
+
+                  <h2>What do you struggle with ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_1" value="1" checked>
+                      <label class="form-check-label" for="mental_q_5_a_1">
+                          Anxiety
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_2" value="0">
+                      <label class="form-check-label" for="mental_q_5_a_2">
+                          Depression
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_3" value="5" checked>
+                      <label class="form-check-label" for="mental_q_5_a_3">
+                          Nothing
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="struggle" id="mental_q_5_a_4" value="3" checked>
+                      <label class="form-check-label" for="mental_q_5_a_4">
+                          Peer pressure
+                      </label>
+                  </div>
+
+                  <button type=button class="btn btn-primary back mental" name="button">Back</button>
+                  <button type=button class="btn btn-primary next mental" name="button">Next</button>
+              </div>
+
+
+              <div class="emotional">
+                  <h1 id="es header">Emotional selfcare</h1>
+                  <hr>
+                  <img id="esil" src="img/es .jpeg" alt="">
+
+                  <h2>How would you describe your emotional status ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_1"
+                          value="5" checked>
+                      <label class="form-check-label" for="emotional_q_1_a_1">
+                          Stable
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_2"
+                          value="0">
+                      <label class="form-check-label" for="emotional_q_1_a_2">
+                          Not good
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_3"
+                          value="3" checked>
+                      <label class="form-check-label" for="emotional_q_1_a_3">
+                          Okay
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="emotional-status" id="emotional_q_1_a_4"
+                          value="1" checked>
+                      <label class="form-check-label" for="emotional_q_1_a_4">
+                          I dont know
+                      </label>
+                  </div>
+
+                  <h2>Have you ever lost someone close to you?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="loss" id="emotional_q_2_a_1" value="5" checked>
+                      <label class="form-check-label" for="emotional_q_2_a_1">
+                          No
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="loss" id="emotional_q_2_a_2" value="3">
+                      <label class="form-check-label" for="emotional_q_2_a_2">
+                          Yes(a few)
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="loss" id="emotional_q_2_a_3" value="0" checked>
+                      <label class="form-check-label" for="emotional_q_2_a_3">
+                          Yes(many)
+                      </label>
+                  </div>
+
+
+                  <h2>Can you relate to the opposite sex comfortably?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="relationship" id="emotional_q_3_a_1" value="5">
+                      <label class="form-check-label" for="emotional_q_3_a_1">
+                          Yes
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="relationship" id="emotional_q_3_a_2" value="3">
+                      <label class="form-check-label" for="emotional_q_3_a_2">
+                          Sometimes
+                      </label>
+                  </div>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="relationship" id="emotional_q_3_a_4" value="0"
+                          checked>
+                      <label class="form-check-label" for="emotional_q_3_a_4">
+                          I cannot
+                      </label>
+                  </div>
+
+                  <h2>Are you healthy and fit ?</h2>
+
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="overall-health" id="emotional_q_4_a_1" value="0">
+                      <label class="form-check-label" for="emotional_q_4_a_1">
+                          Nope
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="overall-health" id="emotional_q_4_a_2" value="3">
+                      <label class="form-check-label" for="emotional_q_4_a_2">
+                          Somehow
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="overall-health" id="emotional_q_4_a_3" value="5"
+                          checked>
+                      <label class="form-check-label" for="emotional_q_4_a_3">
+                          Completely
+                      </label>
+                  </div>
+
+                  <button type=button class="btn btn-primary back emotional" name="button">Back</button>
+                  <button type=button class="btn btn-primary submit emotional" name="button" data-toggle="modal"
+                      data-target="#exampleModalCenter">Submit</button>
+
+
+              </div>
+          </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+
+                      <div class="modal-body">
+                          You have an overall fitness percantage of <b><span id="overall_fit"></span></b>
+                          <hr>
+                          <br>
+                          Physical Fitness: <b><span id="phyc_fit"></span></b><br>
+                          Social Fitness: <b><span id="social_fit"></span></b><br>
+                          Mental Fitness: <b><span id="mental_fit"></span></b><br>
+                          Emotional Fitness: <b><span id="emot_fit"></span></b><br>
+
+                          <p id="advice"></p>
+                          <p id="physical-advice"></p>
+                            <ul id="physical-list">
+
+                            </ul>
+                          <p id="emotional-advice"></p>
+                            <ul id="emotional-list">
+
+                            </ul>
+                          <p id="social-advice"></p>
+                            <ul id="social-list">
+
+                            </ul>
+                          <p id="mental-advice"></p>
+                            <ul id="mental-list">
+
+                            </ul>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+      </div>
     </div>
+  </div>
 </body>
 
 
 </html>
+
