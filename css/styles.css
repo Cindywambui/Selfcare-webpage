@@ -98,3 +98,7 @@ form#testimonial-post {
 .hidden {
   display: none;
 }
+h3.new-titles {
+  color: white;
+  font-weight: bold;
+}
