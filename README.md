@@ -5,11 +5,11 @@
 This is a website that tells users what they need to know about self-care. It contains information about four different key types of self-care, that is, emotionial, physical, social and mental. It gives detailed explanations of each and advice on how to practice each of them. There is a quote section with relevant pieces of information, as well as a questionnaire the user can fill to check out how well they really are taking care of themselves. After filling in the questionnaire, the user is shown what percentage they got in each section and some advice, so they can know which particular sections they need to work well in. In addition to that, the user can read testimonials present and even post one of their own. The user can submit a message to contact us directly.
 
 ## A sample screenshot of the application
-![sample1](images/landing-section.png)
+![sample1](images/landing-section2.png)
 
 This is the landing section for the application.
 
-![sample1](images/landing-section.png)
+![sample1](images/landing-section2.png)
 
 This is the landing section of the application.
 
