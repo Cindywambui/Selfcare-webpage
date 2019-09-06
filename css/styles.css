@@ -1,3 +1,413 @@
+
+#quotesection {
+   background-image: url(../images/ocean3.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#quotesectioncontent {
+
+   padding-top: 5%;
+   padding-bottom: 3%;
+   border-radius: 10%;
+   color:white;
+   margin-top:10%;
+}
+
+#quote1 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+
+}
+#quote2 {
+
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote3 {
+
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote4 {
+
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote5 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote6 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote7 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote8 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote9 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote10 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote11 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote12 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote13 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote14 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote15 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote16 {
+   background-color: rgba(54, 28, 3, 0.5);
+   border-radius: 10%;
+   padding-bottom: 30pt;
+   padding-top: 30pt;
+   border:solid white 1pt;
+}
+#quote2content {
+   display:none;
+}
+#quote3content {
+   display:none;
+}
+#quote4content {
+   display:none;
+}
+.quote6content {
+   display:none;
+}
+.quote7content {
+   display:none;
+}
+.quote8content {
+   display:none;
+}
+#quote10content {
+   display:none;
+}
+#quote11content {
+   display:none;
+}
+#quote12content {
+   display:none;
+}
+#quote14content {
+   display:none;
+}
+#quote15content {
+   display:none;
+}
+#quote16content {
+   display:none;
+}
+
+.physicalimages {
+   float:right;
+}
+#about {
+   background-image: url(../images/palmy2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding-top: 5%;
+   padding-bottom:5%;
+   padding-left: 0px;
+   padding-right: 0px;
+   text-align: center;
+}
+.aboutcontent {
+   background-color: rgba(36, 35, 35, 0.5);
+   color:white;
+   padding-bottom:5%;
+   padding-top: 5%;
+}
+#emotionalcontenttext {
+   display: none;
+   background-color:  rgba(54, 28, 3, 0.5);
+   border:solid black 2pt;
+   padding-left:3%;
+   padding-top:3%;
+   padding-right:3%;
+   padding-bottom:3%;
+   border-radius:5%;
+   font: size 150%;
+}
+#physicalcontenttext {
+   display:none;
+   background-color:  rgba(54, 28, 3, 0.5);
+   border:solid black 2pt;
+   padding-left:3%;
+   padding-top:3%;
+   padding-right:3%;
+   padding-bottom:3%;
+   border-radius:5%;
+   font: size 150%;
+}
+#mentalcontenttext {
+   display:none;
+   background-color:  rgba(54, 28, 3, 0.5);
+   border:solid black 2pt;
+   padding-left:3%;
+   padding-top:3%;
+   padding-right:3%;
+   padding-bottom:3%;
+   border-radius:5%;
+   font: size 150%;
+}
+#socialcontenttext {
+   display:none;
+   background-color:  rgba(54, 28, 3, 0.5);
+   border:solid black 2pt;
+   padding-left:3%;
+   padding-top:3%;
+   padding-right:3%;
+   padding-bottom:3%;
+   border-radius:5%;
+   font: size 150%;
+
+}
+.typeheader {
+   color:grey;
+   padding-top: 2%;
+   padding-bottom:1%;
+}
+#types {
+   text-align: center;
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
+body{
+ align-content: center;
+ font-family: 'Volkhov', serif;
+} */
+.navbar {
+ overflow: hidden;
+ background-color: rgba(255,255,255,0.1);
+ position: fixed; /* Set the navbar to fixed position */
+ top: 0; /* Position the navbar at the top of the page */
+ width: 100%; /* Full width */
+
+}
+#navbar {
+ padding-bottom: 55px;
+}
+
+#landing-image{
+ background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background3.jpg) no-repeat center center fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+ /* text-transform: uppercase; */
+ color: white;
+ max-height: 9700px;
+}
+#landing-image #intro {
+text-align: center;
+padding-top: 300px;
+/* font-size: 30px; */
+padding-bottom: 900px;
+color: white;
+}
+#landing-image h1 {
+ font-size: 90px;
+}
+#landing-image p {
+ font-size: 20px;
+ text-align: center;
+}
+#dropdown {
+ cursor: pointer;
+ }
+
+
+#menu1 , #menu2, #menu3 {
+ width: 35px;
+ height: 5px;
+ background-color: white;
+ margin: 6px 0;
+ transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change #menu1 {
+ -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+ transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change #menu2 {
+ opacity: 0;
+}
+
+/* Rotate last bar */
+.change #menu3 {
+ -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+ transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: rgba(255,255,255,0.1);
+ min-width: 160px;
+ /* z-index: 1; */
+ padding-top: 1px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+ color: white;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+
+.show {display:block;
+}
+
+
+#questionnaire {
+  background-image: url(../img/fit.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sn{
+    display: none;
+}
+
+
+#questions{
+  text-align: center;
+}
+.physicals{
+text-align: center;
+align-items: center;
+}
+
+.social{
+  text-align: center;
+  display: none;
+
+}
+.mental {
+  text-align: center;
+  display: none;
+}
+.emotional {
+  text-align: center;
+  display: none;
+}
+
+.questionnaire-card {
+  /* position: absolute; */
+  left: 50%;
+  right: 50%;
+  /* transform: translate(-50%, -50%); */
+  margin: 50px;
+  font-weight: normal;
+  font-family: 'Bree Serif', sans-serif;
+  border-style: hidden;
+  border-radius: 80px;
+  /* width: auto; */
+}
+#advice {
+  font-weight: bold;
+}
+#physical-advice {
+  font-weight: bold;
+}
+#mental-advice {
+  font-weight: bold;
+}
+#emotional-advice {
+  font-weight: bold;
+}
+#social-advice {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #testimonials-section {
   border-style: hidden;
   border-radius: 60px;
@@ -44,7 +454,7 @@
   color: darkred;
   font-family: 'Acme', sans-serif;
   font-size: 18px;
-  position: ;
+
 }
 .card-title {
   background-image: linear-gradient(0deg, pink, purple);
@@ -104,3 +514,75 @@ h3.new-titles {
   color: darkblue;
   font-weight: bold;
 }
+
+#footer-icons {
+  padding: 3%;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+
+/* conc{
+   background-color: blue;
+   height: 500px;
+   background-size: 100%;
+   text-align: justify;
+ }
+ .conc input{
+   color: white;
+   background-color: rgba(255,255,255);
+   width: 400px;
+   margin-left: 20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1q                        px;
+   margin-top: 30px;
+ }
+ #submit {
+   width: 100px;
+   margin-top: 25px;
+   font-weight: bolder;
+   text-align: center;
+ }
+ #message{
+   height: 330px;
+   text-align: center;
+ }
+ .rw3{
+   margin-top: 15px;
+   margin-left: 175px;
+ }
+ .foot {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ .foot h3 {
+   font-size: 15px;
+ }
+ .foot h4 {
+   font-size: 10px;
+ }
+ .boil{
+   background-image: url(../images/contact.jpg);
+ }
+ #name
+ {
+   margin-left: 160px;
+   background-color: red;
+ }
+ #email{
+   background-color: red;
+ }
+ #text{
+   background-color: red;
+   color: black;
+   margin-top: 40px;
+   width: 600px;
+ }
+ .contact-us{
+   color: #eb830d;
+   font-weight: bolder;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+ }
+ .rw3{
+   margin-left: 180px;.social_icons{
+   align-items: center
+  } */
