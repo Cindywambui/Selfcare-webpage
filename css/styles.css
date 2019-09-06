@@ -1,4 +1,7 @@
-
+body {
+  margin: 0;
+  padding: 0;
+}
 #quotesection {
    background-image: url(../images/ocean3.jpg);
    background-size: cover;
